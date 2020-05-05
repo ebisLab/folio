@@ -23,12 +23,21 @@ function App() {
   <li>
   <Link to="/projects">Projects</Link>
   </li>
+  <li>
+  <Link to="/about">About</Link>
+  </li>
   </ul>
   </nav>
 
-          <Switch>
+          <Switch>   
           <Route path="/projects">
             <Projects />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/gross">
+            <About />
           </Route>
           <Route path="/">
             <Home />
