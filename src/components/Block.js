@@ -2,7 +2,7 @@ import React from "react";
 
 const Block = ({info}) =>{
     return(
-        <a className="column" href="/gross">
+        <a className="column" style={{backgroundImage: `url(${info.imgUrl})`}} href="/gross">
 
         <div data-tab="illustrations"  >
             <span className="variant">

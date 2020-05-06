@@ -49,29 +49,8 @@ li{
   display: inline;
   margin: 20px;
   padding: 20px;
+  cursor: pointer;
 }
-/* .column {
-  float: left;
-  width: 50%;
-  height: 450px;
-} */
-
-/* Clear floats after the columns */
-/* .row:after {
-  content: "";
-  display: grid;
-  clear: both;
-} */
-
-/* .column {
-  position: relative;
-  width: 100%;
-  padding-top: 100%;
-}
-
-.row{
-
-} */
 
 
 .row{
@@ -99,7 +78,7 @@ span:hover {
 
 :root {
   --wrapper: 135vw;
-  --gutter: 10px;
+  --gutter: 0px;
   --rh: calc((var(--wrapper) - (3 * var(--gutter))) / 4);
 }
 
