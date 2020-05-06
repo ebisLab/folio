@@ -1,32 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
     BrowserRouter as Router,
     Switch,
     Route,
     Link
   } from "react-router-dom";
+  import Block from './Block'
+  import {mock} from '../mock'
 
 const Home = () =>{
+    const [data, setData] = useState([])
+    const [query, setQuery] = useState('')
 
-    // var tabTriggerBtns = document.querySelectorAll('.tabs li button');
-
-    // tabTriggerBtns.forEach(function(tabTriggerBtn, index){
-    //     tabTriggerBtn.addEventListener('click', function(){
-    //         var currentTabData = document.querySelector('.tab-content[data-tab-content="' + this.dataset.tabTrigger + '"]');
+    console.log('data', data)
+    useEffect((e) => {
     
-    //         // remove classess
-    //         document.querySelector('.tab-content.is-open').classList.remove('is-open');
-    //         document.querySelector('.tabs li button.is-active').classList.remove('is-active');
-    //         // add classes
-    //         currentTabData.classList.add('is-open');
-    //         this.classList.add('is-active');
-    //     });
-    // });
+        setData(mock)
+        // setData(mock.filter(name=>name.category.includes('')))
+
+    }, [])
+
 
     const filterthrough = (e)=>{
         e.preventDefault()
-        console.log('i just clicked this--->', e.target.dataset.tab)
+        // console.log('i just clicked this--->', e.target.dataset.tab)
         // console.log(document.querySelector('[data-tab=illustrations]'))
+        setData(data.filter(name=>name.category.includes(`${e.target.dataset.tab}` || '')))
     }
 
     return(
@@ -37,40 +36,18 @@ const Home = () =>{
             <nav>
                 <ul>
                     <li data-tab="illustrations" className="something" onClick={filterthrough}>Illustrations</li>
-                    <li>Graphs</li>
-                    <li>FullStack</li>
-                    <li>UI</li>
+                    <li data-tab="app" onClick={(e)=>(setData(data.filter(name=>name.category.includes(e.target.dataset.tab))))}>Graphs</li>
+                    <li onClick={filterthrough}>FullStack</li>
+                    <li data-tab="ux"onClick={filterthrough}>UI</li>
 
 
                 </ul>
+
+                {console.log(data && data.map(item=>item.category))}
             </nav>
 
             <div className="row">
-            {/* <a href="/gross"> */}
-            <a className="column" href="/gross">
-
-                <div data-tab="illustrations"  >
-                {/* <a href="/gross"> */}
-                    <span className="variant">
-                        <h1>App</h1>
-                        <h1>Project Sample Name</h1>
-                        {/* <a href="/gross">Bored</a> */}
-                        <br/>
-                        {/* <Link to="/gross">Project Link</Link> */}
-
-                        </span>
-                        {/* </a> */}
-                    </div>
-                    </a>
-
-
-
-
-
-                    <div className="column" >Stuff</div>
-                
-                <div className="column" >Stuff</div>
-                <div className="column" data-tab="illustrations" >Stuff Illustration part</div>
+                {data && data.map(item=> <Block info={item} />)}
             </div>
        
         </div>
