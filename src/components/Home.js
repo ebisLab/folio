@@ -12,20 +12,14 @@ const Home = () =>{
     const [data, setData] = useState([])
     const [query, setQuery] = useState('')
 
-    console.log('data', data)
     useEffect((e) => {
-    
         setData(mock)
-        // setData(mock.filter(name=>name.category.includes('')))
-
     }, [])
 
 
     const filterthrough = (e)=>{
         e.preventDefault()
-        // console.log('i just clicked this--->', e.target.dataset.tab)
-        // console.log(document.querySelector('[data-tab=illustrations]'))
-        setData(data.filter(name=>name.category.includes(`${e.target.dataset.tab}` || '')))
+        setQuery(data.filter(name=>name.category.includes(`${e.target.dataset.tab}`)))
     }
 
     return(
@@ -35,19 +29,19 @@ const Home = () =>{
         </h1>
             <nav>
                 <ul>
+                <li onClick={() => setQuery(null)}>All</li>
                     <li data-tab="illustrations" className="something" onClick={filterthrough}>Illustrations</li>
-                    <li data-tab="app" onClick={(e)=>(setData(data.filter(name=>name.category.includes(e.target.dataset.tab))))}>Graphs</li>
+                    <li data-tab="app" onClick={filterthrough}>App</li>
                     <li onClick={filterthrough}>FullStack</li>
                     <li data-tab="ux"onClick={filterthrough}>UI</li>
 
 
                 </ul>
 
-                {console.log(data && data.map(item=>item.category))}
             </nav>
 
             <div className="row">
-                {data && data.map(item=> <Block info={item} />)}
+                {query ?(query.map(item=> <Block info={item} />)): (data.map(item=> <Block info={item} />))}
             </div>
        
         </div>
