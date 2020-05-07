@@ -2,15 +2,17 @@ import React from "react";
 
 const Block = ({info}) =>{
     return(
-        <a className="column" style={{backgroundImage: `url(${info.imgUrl})`}} href="/gross">
+        <a className="column" 
+        // style={{backgroundImage: `url(${info.imgUrl})`}} 
+        href="/gross">
 
         <div data-tab="illustrations"  >
-            <span className="variant">
+            <div className="variant">
                 <h2>{info.category}</h2>
                 <h1>{info.title}</h1>
                 <br/>
 
-                </span>
+                </div>
             </div>
             </a>
 
