@@ -8,7 +8,9 @@ const About = () =>{
         </h1>
         <p>
             This site is created with React. 
+            
         </p>
+        <p> © E.B.'s Lab {new Date().getFullYear()}</p>
         </div>
     )
 }

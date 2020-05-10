@@ -26,12 +26,13 @@ const Home = () =>{
     //remove duplicates
     const b = a.filter((item, index, self) => self.indexOf(item) === index) 
 
+
     return(
         <div>
              <h1>
             This is the home
         </h1>
-            <nav>
+            <nav id="navigation">
                 {/* <ul>
                 <li onClick={() => setQuery(null)}>All</li>
                     <li data-tab="illustrations" className="something" onClick={filterthrough}>Illustrations</li>
@@ -40,7 +41,7 @@ const Home = () =>{
                     <li data-tab="ux"onClick={filterthrough}>UI</li>
                 </ul> */}
 
-                <ul>
+                <ul id="a113">
                 <li onClick={() => setQuery(null)}>All</li>
                 {b.map((item, key)=><li data-tab={`${item}`} key={key} onClick={filterthrough}>{item}</li>)}
 

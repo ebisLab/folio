@@ -1,16 +1,18 @@
 import React from "react";
+import{Route, Link} from 'react-router-dom';
+
 
 const Block = ({info}) =>{
     return(
-        <a className="column v2" 
+        <Link className="column v2" 
         style={{backgroundImage: `url(${info.imgUrl})`}} 
-        href="/gross">
+        to="/gross">
 <div className="v3">
         <div data-tab="illustrations"  >
             <div className="variant">
                 
-        <div class="middle">
-    <div class="text">
+        <div className="middle">
+    <div className="text">
         
     <h2>{info.category}</h2>
                 <h1>{info.title}</h1>
@@ -21,7 +23,7 @@ const Block = ({info}) =>{
                 </div>
             </div>
             </div>
-            </a>
+            </Link>
 
     )
 }
