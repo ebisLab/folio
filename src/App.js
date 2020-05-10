@@ -26,6 +26,7 @@ function App() {
   <li>
   <Link to="/about">About</Link>
   </li>
+  <li>Blog</li>
   </ul>
   </nav>
 

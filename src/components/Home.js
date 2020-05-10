@@ -29,9 +29,15 @@ const Home = () =>{
 
     return(
         <div>
-             <h1>
-            This is the home
-        </h1>
+        <div style={{textAlign: "center"}}>
+            <ul>
+                <li>LinkedIn</li>
+                <li>Github</li>
+                <li>Email</li>
+
+                <input placeholder="search me" />
+            </ul>
+            </div>
             <nav id="navigation">
                 {/* <ul>
                 <li onClick={() => setQuery(null)}>All</li>
