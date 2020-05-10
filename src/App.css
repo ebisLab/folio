@@ -1,3 +1,5 @@
+--info.imgUrl
+
 .App {
   text-align: center;
 }
@@ -63,17 +65,10 @@ li{
 }
 
 
-
-span:hover {
-  background-color:rgba(1, 50, 67, 1);
-}
-
 .column {
   grid-column: span 2;
   background-image: url("https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2767&q=80");
   background-size: 110% 100%;
-  /* background-size: cover; */
-
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-transition: all 0.5s;
@@ -84,32 +79,63 @@ span:hover {
 }
 
 .column:hover {
-  /* background: red */
   background-size: 130% 120%;
-  /* transition: all .3s ease-in-out; */
-
-  /* transform: scale(1.2); */
-  /* overflow: hidden; */
 }
 
-/* .row:hover .column:before, .row:focus .column:before {
-  display: block;
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  /* transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); */
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 20%;
+}
+
+.column:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  /* background-color: #4CAF50; */
+  color: white;
+  font-size: 16px;
+  text-decoration-line: none;
+  /* padding: 16px 32px; */
+
+}
+
+a{
+text-decoration: none;
+}
+
+
+
+/* .column:hover .variant{
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out 0s;
+} */
+/* a.v2:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.47)) !important;
+  background-size: 130% 120%;
+  transition: all 0.5s;
 } */
 
-/* .row:hover a, .row:focus a {
-  display: block;
-} */
-
-/* .column:before {
-  content: "";
-  display: none;
-  height: 100%;
+.column:hover .v3 {
+  background: rgba(0, 0, 0, 0.30) !important;
+  transition: all 0.6s ease-in-out 0s;
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(52,73,94,0.75);
-} */
+  height: 120%;
+  /* margin-top: -20px; */
+}
+
+.v3{
+  margin-top: -20px;
+}
+
+
 
 :root {
   --wrapper: 135vw;
@@ -117,13 +143,7 @@ span:hover {
   --rh: calc((var(--wrapper) - (3 * var(--gutter))) / 4);
 }
 
-/* .img-gallery a:hover img{
-  transform:scale(1.25);
-} */
 
-.variant {
-  border: 1px solid orange;
-}
 
 @keyframes nav {
   from { opacity: 0; transform: translate3d(0, -25px, 0) }
@@ -135,21 +155,17 @@ nav{
 
 }
 
-.variant:hover{
-  color: greenyellow;
-  /* animation: nav 0.2s ease-in-out forwards; */
 
-  -webkit-animation: slide-top 0.5s ease-in forwards;
-  animation: slide-top 0.5s ease-in forwards;
-
-
-}
+/* .v2:after{
+  background: green;
+  width: 200px
+} */
 
 .variant {
   text-align: center;
-  border: 1px solid orange;
   height: 100%;
   align-items: center;
+
 }
 
 
@@ -200,5 +216,10 @@ nav{
       margin-top: -20px;
   padding-top: 20px;
 }
+
+
+
+
+
 
 

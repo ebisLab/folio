@@ -2,17 +2,24 @@ import React from "react";
 
 const Block = ({info}) =>{
     return(
-        <a className="column" 
+        <a className="column v2" 
         style={{backgroundImage: `url(${info.imgUrl})`}} 
         href="/gross">
-
+<div className="v3">
         <div data-tab="illustrations"  >
             <div className="variant">
-                <h2>{info.category}</h2>
+                
+        <div class="middle">
+    <div class="text">
+        
+    <h2>{info.category}</h2>
                 <h1>{info.title}</h1>
-                <br/>
+    </div>
+  </div>
+                
 
                 </div>
+            </div>
             </div>
             </a>
 
