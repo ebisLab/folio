@@ -2,14 +2,14 @@ export const mock =[
     {
         id:1,
     title: "Project Sample 1",
-    category: "ux",
+    category: "case studies",
     url: "/gross", 
     imgUrl: "https://images.unsplash.com/photo-1526312426976-f4d754fa9bd6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1246&q=80"
 },
 {
     id:2,
     title: "Project Sample 1",
-    category: "ux",
+    category: "case studies",
     url: "/gross", 
     imgUrl:'https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2767&q=80',
     // imgUrl: "https://images.unsplash.com/photo-1585068247241-753a57d51cf2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2536&q=80"
@@ -17,7 +17,7 @@ export const mock =[
 {
     id:3,
     title: "Project Sample 1",
-    category: "ux",
+    category: "experiments",
     url: "/gross", 
     imgUrl: "https://images.unsplash.com/photo-1565306241695-8a5f675d6b57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
 },

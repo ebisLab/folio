@@ -7,6 +7,7 @@ import {
   } from "react-router-dom";
   import Block from './Block'
   import {mock} from '../mock'
+  import Search from './Search'
 
 const Home = () =>{
     const [data, setData] = useState([])
@@ -29,15 +30,20 @@ const Home = () =>{
 
     return(
         <div>
-        <div style={{textAlign: "center"}}>
+            <div style={{display: 'inline-flex', textAlign: 'center'}}>
+               <Search/>
+        <div>
             <ul>
                 <li>LinkedIn</li>
                 <li>Github</li>
                 <li>Email</li>
 
-                <input placeholder="search me" />
+                {/* <input placeholder="search me" /> */}
+                
             </ul>
-            </div>
+                     </div>
+
+           </div>
             <nav id="navigation">
                 {/* <ul>
                 <li onClick={() => setQuery(null)}>All</li>
