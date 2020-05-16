@@ -6,7 +6,7 @@ const Block = ({info}) =>{
     return(
         <Link className="column v2" 
         style={{backgroundImage: `url(${info.imgUrl})`}} 
-        to="/gross">
+        to={`/post/${info.id}`}>
 <div className="v3">
         <div data-tab="illustrations"  >
             <div className="variant">

@@ -1,21 +1,10 @@
 import React, { useState, useEffect } from "react";
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
   import Block from './Block'
   import {mock} from '../mock'
   import Search from './Search'
 
-const Home = () =>{
-    const [data, setData] = useState([])
+const Home = ({data}) =>{
     const [query, setQuery] = useState('')
-
-    useEffect((e) => {
-        setData(mock)
-    }, [])
 
 
     const filterthrough = (e)=>{
@@ -30,7 +19,7 @@ const Home = () =>{
 
     return(
         <div>
-            <div style={{display: 'inline-flex', textAlign: 'center'}}>
+            <div style={{display: 'inline-flex', textAlign: 'center', margin: "0 calc(45% - 100px)"}}>
                <Search/>
         <div>
             <ul>
@@ -64,7 +53,8 @@ const Home = () =>{
             </nav>
 
             <div className="row">
-                {query ?(query.map((item,key)=> <Block key={key} info={item} />)): (data.map((item, key)=> <Block key={key} info={item} />))}
+                {query ?(query.map((item,key)=> <Block key={key} info={item} />)): 
+                (data.map((item, key)=> <Block key={key} info={item} />))}
             </div>
        
         </div>
