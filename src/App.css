@@ -65,6 +65,18 @@ li{
 }
 
 
+/* .column1 {
+  grid-column: span 2;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  overflow: hidden;
+} */
+
 .column {
   grid-column: span 2;
   background-image: url("https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2767&q=80");
@@ -139,6 +151,7 @@ text-decoration: none;
 
 :root {
   --wrapper: 135vw;
+  --wrap: 135vw;
   --gutter: 0px;
   --rh: calc((var(--wrapper) - (3 * var(--gutter))) / 4);
 }
