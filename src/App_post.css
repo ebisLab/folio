@@ -1,6 +1,7 @@
 html {
     height:100%;
     overflow:hidden;
+    font-size: 16px;
   }
   body {
       margin: 0;
@@ -53,3 +54,12 @@ html {
     height: unset !important;
     background-position: center center !important;
   }
+
+  .content:first-child {
+margin-bottom: 70px;
+background: red;
+  }
+
+  .content:nth-child(3n) {
+    margin-top: 0;
+      }

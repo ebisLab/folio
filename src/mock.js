@@ -5,6 +5,10 @@ export const mock =[
     category: "case studies",
     imgUrl: "https://images.unsplash.com/photo-1526312426976-f4d754fa9bd6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1246&q=80",
     text:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis iure architecto ab eius repellat hic dolorum odit blanditiis possimus quos sunt quod a asperiores obcaecati numquam, nisi eveniet magnam impedit.",
+    socials: {
+        github: "http://github.com",
+        website: "google.com"
+    },
     imgs: ["https://images.unsplash.com/photo-1589561253898-768105ca91a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80", "https://images.unsplash.com/photo-1589550457981-00c39a2ede4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80","https://images.unsplash.com/photo-1589455719452-1ac812ae7a0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"]
 },
 {
@@ -14,8 +18,6 @@ export const mock =[
     imgUrl:'https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2767&q=80',
     text:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis iure architecto ab eius repellat hic dolorum odit blanditiis possimus quos sunt quod a asperiores obcaecati numquam, nisi eveniet magnam impedit.",
     imgs: ["https://images.unsplash.com/photo-1589561253898-768105ca91a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80", "https://images.unsplash.com/photo-1589550457981-00c39a2ede4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80","https://images.unsplash.com/photo-1589455719452-1ac812ae7a0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"]
-
-    // imgUrl: "https://images.unsplash.com/photo-1585068247241-753a57d51cf2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2536&q=80"
 },
 {
     id:3,

@@ -40,14 +40,13 @@ const Intro = styled.div`
 
 <div></div>
 
-<div style={{background: "yellow"}}>
+<div style={{background: "white"}}>
 <div className="content" style={{ background: "white"}}>
     <div style={{display: "inline-flex", padding: "0 100px"}}>
     <section style={{padding:"20px", width: "100%"}}><h2>{info.title}</h2></section>
     
-    <section style={{padding:"20px"}}><p>
-{info.text}
-    </p>
+    <section style={{padding:"20px"}}><p>{info.text}</p>
+    <p>{info.socials&& `Github:  ${info.socials.github}`}</p>
     </section>
     </div>
 
@@ -55,7 +54,7 @@ const Intro = styled.div`
 
 
 
-    <div className="content" style={{ background: "yellowgreen", display: "inline-grid", padding:0, gridTemplateColumns: 'repeat(2, 1fr)',}}>      
+    <div className="content" style={{ background: "white", display: "inline-grid", padding:0, gridTemplateColumns: 'repeat(2, 1fr)',}}>      
             {info.imgs && info.imgs.map(im=>(
             <div 
             style={{
@@ -65,10 +64,12 @@ const Intro = styled.div`
            ))}      
     </div>
 
-    <div className="content" style={{ background: "limegreen", display:"green"}}>
+    <div className="content" style={{ background: "white"}}>
         <div style={{display: "inline-flex", padding: "0 100px"}}>
             <section style={{padding:"20px", width: "100%"}}><h2>{info.title}</h2></section>
-             <section style={{padding:"20px"}}><p>{info.text}</p></section>
+             <section style={{padding:"20px"}}>
+                 <p>{info.text}</p>
+                 </section>
         </div>
     </div>
 
