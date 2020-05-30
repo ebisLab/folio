@@ -9,10 +9,11 @@ import {
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import ScrollToTop from './ScrollToTop';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router><App /></Router>
+    <Router><ScrollToTop/><App /></Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
