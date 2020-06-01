@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 
-const Search = ()=>{
+const Search = ({submitHandler, changeHandler})=>{
+    const [data, setData] = useState();
+
+
     return(
-        <form id="demo-2" style={{position: "absolute"}}>
-            <input className="search" type="search" placeholder="search" />
+        <form id="demo-2" onSubmit={submitHandler} style={{position: "absolute"}}>
+            <input className="search" onChange={changeHandler} type="search" placeholder="search" />
         </form>
     )
 }

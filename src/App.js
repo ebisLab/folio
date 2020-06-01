@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import logo from './logo.svg';
 import './App.css';
 import About from './components/About'
 import Projects from './components/Projects'
 import Home from './components/Home'
 import Post from './components/Post'
 import {mock} from './mock'
+import Search from './components/Search'
+import SearchResults from './components/SearchResults'
 
 import {
   Switch,
@@ -15,11 +16,24 @@ import {
 
 function App() {
   const [data, setData] = useState([])
+  const [query, setQuery] = useState('')
 
 
   useEffect((e) => {
     setData(mock)
 }, [])
+
+const changeHandler = e => {
+  e.preventDefault();
+  setQuery(e.target.value);
+  console.log(e.target.value);
+};
+
+const submitHandler = e => {
+  e.preventDefault();
+  setQuery(e.target.value);
+};
+console.log(data);
 
   return (
 
@@ -40,10 +54,6 @@ function App() {
   </nav>
 
           <Switch>   
-          
-          {/* <Route path="/projects/" render={props=><Projects/>}/>
-          <Route path="/post/:postID" render={props=><Post {...props}/>}/> */}
-
           <Route path="/post/:data">
             <Post key={data.id} data={data} />
             </Route>
@@ -58,7 +68,27 @@ function App() {
             <About />
           </Route>
           <Route path="/">
-            <Home data={data}/>
+
+            <div >
+
+<div style={{display: 'inline-flex', textAlign: 'center', margin: "0 calc(45% - 100px)"}}>
+            <Search changeHandler={changeHandler} submitHandler={submitHandler} />
+               
+               <div>
+                   <ul>
+                       <li>LinkedIn</li>
+                       <li>Github</li>
+                       <li>Email</li>
+       
+                       
+                   </ul>
+                            </div>
+
+</div>
+            {/* <Home data={data}/> */}
+            {console.log("iniside App below home")}
+            {query? <SearchResults />: <Home data={data}/>}
+            </div>
           </Route>
         </Switch>
     </Route>

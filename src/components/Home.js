@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
   import Block from './Block'
-  import {mock} from '../mock'
   import Search from './Search'
 
 const Home = ({data}) =>{
@@ -16,21 +15,32 @@ const Home = ({data}) =>{
     //remove duplicates
     const b = a.filter((item, index, self) => self.indexOf(item) === index) 
 
+    // const changeHandler = e => {
+    //     e.preventDefault();
+    //     setQuery(e.target.value);
+    //     console.log(e.target.value);
+    //   };
+    
+    //   const submitHandler = e => {
+    //     e.preventDefault();
+    //     setQuery(e.target.value);
+    //   };
+    //   console.log(data);
 
     return(
         <div>
             <div style={{display: 'inline-flex', textAlign: 'center', margin: "0 calc(45% - 100px)"}}>
-               <Search/>
+               {/* <Search changeHandler={changeHandler} submitHandler={submitHandler} />
+               
         <div>
             <ul>
                 <li>LinkedIn</li>
                 <li>Github</li>
                 <li>Email</li>
 
-                {/* <input placeholder="search me" /> */}
                 
             </ul>
-                     </div>
+                     </div> */}
 
            </div>
             <nav id="navigation">
@@ -53,6 +63,8 @@ const Home = ({data}) =>{
             </nav>
 
             <div className="row">
+                {/* {data.map((item, key)=> <Block key={key} info={item} />) } */}
+                {console.log(query? 'Its quering': 'Its not quering')}
                 {query ?(query.map((item,key)=> <Block key={key} info={item} />)): 
                 (data.map((item, key)=> <Block key={key} info={item} />))}
             </div>
