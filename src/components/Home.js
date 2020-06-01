@@ -15,34 +15,9 @@ const Home = ({data}) =>{
     //remove duplicates
     const b = a.filter((item, index, self) => self.indexOf(item) === index) 
 
-    // const changeHandler = e => {
-    //     e.preventDefault();
-    //     setQuery(e.target.value);
-    //     console.log(e.target.value);
-    //   };
-    
-    //   const submitHandler = e => {
-    //     e.preventDefault();
-    //     setQuery(e.target.value);
-    //   };
-    //   console.log(data);
 
     return(
         <div>
-            <div style={{display: 'inline-flex', textAlign: 'center', margin: "0 calc(45% - 100px)"}}>
-               {/* <Search changeHandler={changeHandler} submitHandler={submitHandler} />
-               
-        <div>
-            <ul>
-                <li>LinkedIn</li>
-                <li>Github</li>
-                <li>Email</li>
-
-                
-            </ul>
-                     </div> */}
-
-           </div>
             <nav id="navigation">
                 {/* <ul>
                 <li onClick={() => setQuery(null)}>All</li>
@@ -63,8 +38,6 @@ const Home = ({data}) =>{
             </nav>
 
             <div className="row">
-                {/* {data.map((item, key)=> <Block key={key} info={item} />) } */}
-                {console.log(query? 'Its quering': 'Its not quering')}
                 {query ?(query.map((item,key)=> <Block key={key} info={item} />)): 
                 (data.map((item, key)=> <Block key={key} info={item} />))}
             </div>
