@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 
 const Search = ({submitHandler, changeHandler})=>{
-    const [data, setData] = useState();
 
 
     return(

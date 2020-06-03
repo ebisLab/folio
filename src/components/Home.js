@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
   import Block from './Block'
-  import Search from './Search'
 
 const Home = ({data}) =>{
     const [query, setQuery] = useState('')

@@ -7,6 +7,7 @@ import Post from './components/Post'
 import { mock } from './mock'
 import Search from './components/Search'
 import SearchResults from './components/SearchResults'
+import {highlight} from './utils/highlight'
 
 import {
   Switch,
@@ -19,21 +20,21 @@ function App() {
   const [query, setQuery] = useState('')
 
 
-  useEffect((e) => {
+  useEffect(() => {
     setData(mock)
   }, [])
-
   const changeHandler = e => {
     e.preventDefault();
     setQuery(e.target.value);
-    console.log(e.target.value);
-  };
+    highlight(query)
+      };
 
   const submitHandler = e => {
     e.preventDefault();
     setQuery(e.target.value);
   };
-  console.log(data);
+
+
 
   return (
 
@@ -86,7 +87,7 @@ function App() {
 
             </div>
 
-            {query ? <SearchResults /> : <Home data={data} />}
+            {query ? <SearchResults query={query} data={data}/> : <Home data={data} />}
           </div>
         </Route>
       </Switch>
