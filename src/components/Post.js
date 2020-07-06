@@ -7,7 +7,9 @@ import styled from 'styled-components'
 const Projects = ({ data }) => {
 
     const params = useParams();
+    console.log(data, 'data in projects')
     const info = data.find(item => item.id === Number(params.data));
+    console.log(params,'params')
     console.log(info, 'info')
 
     const Intro = styled.div`
@@ -104,3 +106,4 @@ const Projects = ({ data }) => {
 }
 
 export default Projects
+    
