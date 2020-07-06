@@ -1,15 +1,17 @@
 export const mock =[
     {
         id:1,
-    title: "Project Sample 1 First Project",
+    title: "Anytime Fitness",
     category: "case studies",
-    imgUrl: "https://images.unsplash.com/photo-1526312426976-f4d754fa9bd6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1246&q=80",
+    imgUrl: "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=800",
     socials: {
-        github: "http://github.com",
-        website: "google.com"
+        github: "https://github.com/anywhere-fitness-ii/Front-End",
+        website: "https://anytimefit.netlify.app"
     },
-    imgs: ["https://images.unsplash.com/photo-1589561253898-768105ca91a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80", "https://images.unsplash.com/photo-1589550457981-00c39a2ede4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80","https://images.unsplash.com/photo-1589455719452-1ac812ae7a0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"],
-    text: "Soko radicchio bunya graphql nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage. Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut. Sea lettuce gumbo grape kale kombu cauliflower salsify kohlrabi okra sea lettuce broccoli celery lotus root carrot winter purslane turnip greens garlic. Jícama garlic courgette coriander radicchio plantain scallion cauliflower fava bean desert raisin spring onion chicory bunya nuts. Sea lettuce water spinach gram fava bean leek dandelion silver beet eggplant bush tomato."
+    imgs: ["https://images.unsplash.com/photo-1589561253898-768105ca91a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80", "https://images.unsplash.com/photo-1589550457981-00c39a2ede4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+    "/img1.png"
+],
+    text: "Anytime Fitness is a platform for people who want to have access to a wide variety of fitness classes.  It is quick and easy to sign up and pay."
 
 },
 {

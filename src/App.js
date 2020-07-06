@@ -56,7 +56,7 @@ function App() {
 
       <Switch>
         <Route path="/post/:data">
-          <Post key={data.id} data={data} />
+          <Post data={data} />
         </Route>
 
         <Route path="/post/">

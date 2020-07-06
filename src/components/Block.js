@@ -4,9 +4,9 @@ import{Route, Link} from 'react-router-dom';
 
 const Block = ({info}) =>{
     return(
-        <a className="column v2" 
+        <Link className="column v2" 
         style={{backgroundImage: `url(${info.imgUrl})`}} 
-        href={`/post/${info.id}`}>
+        to={`/post/${info.id}`}>
 <div className="v3">
         <div data-tab="illustrations"  >
             <div className="variant">
@@ -23,7 +23,7 @@ const Block = ({info}) =>{
                 </div>
             </div>
             </div>
-            </a>
+            </Link>
 
     )
 }
