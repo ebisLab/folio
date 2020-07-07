@@ -38,25 +38,39 @@ const Projects = ({ data }) => {
             {info && (
 
                 <div>
-                    <Intro className="intro"></Intro>
+                    <Intro className="intro">
+                        <h1 className="floating" style={{marginTop:50, fontSize:"6rem"}}>↓</h1>
+                    </Intro>
 
                     <div></div>
 
                     <div style={{ background: "white" }}>
                         <div className="content" style={{ background: "white" }}>
                             <div style={{ display: "inline-flex", padding: "0 100px" }}>
-                                <section style={{ padding: "20px", width: "100%" }}><h2>{info.title}</h2></section>
+                                <section style={{ padding: "20px", width: "100%" }}>
+                                    <h2>{info.title}</h2>
+                                    <h4>{info.role}</h4>
+                            <p>{info.text2}</p>
+                                    </section>
 
                                 <section style={{ padding: "20px" }}><p>{info.text}</p>
-                                    <p>{info.socials && `Github:  ${info.socials.github}`}</p>
+                                <p>Tech stacks: {info.techstack}</p>
+
+                                    {/* <p>{info.socials && `Github:  ${info.socials.github}`}</p> */}
+                                    {info.socials && (
+                                    <div>
+                                        <a href={`${info.socials.github}`}>Github</a> • <a href={`${info.socials.website}`}>Website</a>
+                                        </div>
+                                    )}
+
                                 </section>
                             </div>
-
                         </div>
 
 
 
-                        <div className="content" style={{ background: "white", display: "inline-grid", padding: 0, gridTemplateColumns: 'repeat(2, 1fr)', }}>
+
+                        {/* <div className="content" style={{ background: "white", display: "inline-grid", padding: 0, gridTemplateColumns: 'repeat(2, 1fr)', }}>
                             {info.imgs && info.imgs.map(im => (
                                 <div
                                     style={{
@@ -74,7 +88,7 @@ const Projects = ({ data }) => {
                                     <p>{info.text}</p>
                                 </section>
                             </div>
-                        </div>
+                        </div> */}
 
                         <div className="content cellSection">
                             {info.imgs && info.imgs.map(im => (
@@ -92,9 +106,13 @@ const Projects = ({ data }) => {
 
 
 
+                        {/* <div>
+                            <h2>Role:{info.role}</h2>
+                            <p>{info.text2}</p>
+                            </div> */}
 
-                        <div style={{ background: "yellow" }}><h2>{info.text}</h2></div>
-                        <div style={{ background: "dodgerblue" }}><h2>{info.text}</h2></div>
+                        {/* <div style={{ background: "yellow" }}><h2>{info.text}</h2></div>
+                        <div style={{ background: "dodgerblue" }}><h2>{info.text}</h2></div> */}
                     </div>
 
                 </div>
