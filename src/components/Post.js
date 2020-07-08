@@ -49,12 +49,14 @@ const Projects = ({ data }) => {
                             <div style={{ display: "inline-flex", padding: "0 100px" }}>
                                 <section style={{ padding: "20px", width: "100%" }}>
                                     <h2>{info.title}</h2>
-                                    <h4>{info.role}</h4>
+                                    {/* <h4>{info.role}</h4> */}
+                                    <p>Tech stacks: {info.techstack}</p>
+
                             <p>{info.text2}</p>
                                     </section>
 
-                                <section style={{ padding: "20px" }}><p>{info.text}</p>
-                                <p>Tech stacks: {info.techstack}</p>
+                                <section style={{ padding: "20px",alignSelf: "center" }}><p>{info.text}</p>
+                                {/* <p>Tech stacks: {info.techstack}</p> */}
 
                                     {/* <p>{info.socials && `Github:  ${info.socials.github}`}</p> */}
                                     {info.socials && (
@@ -90,7 +92,7 @@ const Projects = ({ data }) => {
                             </div>
                         </div> */}
 
-                        <div className="content cellSection">
+                        {/* <div className="content cellSection">
                             {info.imgs && info.imgs.map(im => (
                                 <div
                                     className="cells"
@@ -102,7 +104,36 @@ const Projects = ({ data }) => {
                                 ></div>
 
                             ))}
-                        </div>
+                        </div> */}
+
+
+{                                   info.imgs.length==1 ?             <div className="content cellSection" style={{gridTemplateColumns: "auto"}}>
+                            {info.imgs && info.imgs.map(im => (
+                                <div
+                                    className="cells"
+                                    style={{
+                                        background: "red",
+                                        width: "50%",
+                                        backgroundImage: `url(${im})`, width: "100%", height: "30vw", backgroundSize: 'cover'
+                                    }}
+                                ></div>
+
+                            ))}
+                        </div> :
+                        
+                        (                                                <div className="content cellSection">
+                        {info.imgs && info.imgs.map(im => (
+                            <div
+                                className="cells"
+                                style={{
+                                    background: "red",
+                                    width: "50%",
+                                    backgroundImage: `url(${im})`, width: "100%", height: "30vw", backgroundSize: 'cover'
+                                }}
+                            ></div>
+
+                        ))}
+                    </div>)}
 
 
 

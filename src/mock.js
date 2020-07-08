@@ -56,7 +56,7 @@ socials: {
     website: "https://www.beerthoven.dev/"
 },
 imgs: [
-    "/images/beerthoven/img4.png", "/images/beerthoven/img3.png"
+"/images/beerthoven/img3.png"
 ],
 resources:"https://www.notion.so/Beerthoven-2ac2dcac96d741fc8c5ff645cf0ccaea",
 role: "FrontEnd React Dev",
