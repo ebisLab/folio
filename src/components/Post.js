@@ -39,12 +39,19 @@ const Projects = ({ data }) => {
 
                 <div>
                     <Intro className="intro">
-                        <h1 className="floating" style={{ marginTop: 50, fontSize: "6rem" }}>↓</h1>
+                        <h1 onClick={()=>{
+                            var my_element = document.getElementById("my_element");
+
+my_element.scrollIntoView({
+  behavior: "smooth",
+  block: "start",
+  inline: "nearest"
+});}} className="floating" style={{ marginTop: 50, fontSize: "6rem", cursor:"pointer", width: "100px", marginLeft: "auto", marginRight: "auto"  }}>↓</h1>
                     </Intro>
 
                     <div></div>
 
-                    <div style={{ background: "white" }}>
+                    <div id="my_element" style={{ background: "white"}}>
                         <div className="content" style={{ background: "white" }}>
                             <div style={{ display: "inline-flex", padding: "0 100px" }}>
                                 <section style={{ padding: "20px", width: "100%" }}>
