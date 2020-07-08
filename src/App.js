@@ -41,13 +41,16 @@ function App() {
   return (
 
     <Route>
+      {/* <h1 
+      style={{fontFamily: 'Abril Fatface, cursive'}}
+      >Eunice Baiden</h1> */}
       <nav>
         <ul>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <NavLink to="/about">About</NavLink>
+            <Link to="/about">About</Link>
           </li>
           <li>Blog</li>
         </ul>

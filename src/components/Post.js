@@ -9,7 +9,7 @@ const Projects = ({ data }) => {
     const params = useParams();
     console.log(data, 'data in projects')
     const info = data.find(item => item.id === Number(params.data));
-    console.log(params,'params')
+    console.log(params, 'params')
     console.log(info, 'info')
 
     const Intro = styled.div`
@@ -39,7 +39,7 @@ const Projects = ({ data }) => {
 
                 <div>
                     <Intro className="intro">
-                        <h1 className="floating" style={{marginTop:50, fontSize:"6rem"}}>↓</h1>
+                        <h1 className="floating" style={{ marginTop: 50, fontSize: "6rem" }}>↓</h1>
                     </Intro>
 
                     <div></div>
@@ -52,16 +52,16 @@ const Projects = ({ data }) => {
                                     {/* <h4>{info.role}</h4> */}
                                     <p>Tech stacks: {info.techstack}</p>
 
-                            <p>{info.text2}</p>
-                                    </section>
+                                    <p>{info.text2}</p>
+                                </section>
 
-                                <section style={{ padding: "20px",alignSelf: "center" }}><p>{info.text}</p>
-                                {/* <p>Tech stacks: {info.techstack}</p> */}
+                                <section style={{ padding: "20px", alignSelf: "center" }}><p>{info.text}</p>
+                                    {/* <p>Tech stacks: {info.techstack}</p> */}
 
                                     {/* <p>{info.socials && `Github:  ${info.socials.github}`}</p> */}
                                     {info.socials && (
-                                    <div>
-                                        <a href={`${info.socials.github}`}>Github</a> • <a href={`${info.socials.website}`}>Website</a>
+                                        <div>
+                                            <a href={`${info.socials.github}`}>Github</a> • <a href={`${info.socials.website}`}>Website</a>
                                         </div>
                                     )}
 
@@ -107,21 +107,21 @@ const Projects = ({ data }) => {
                         </div> */}
 
 
-{                                   info.imgs.length==1 ?             <div className="content cellSection" style={{gridTemplateColumns: "auto"}}>
-                            {info.imgs && info.imgs.map(im => (
-                                <div
-                                    className="cells"
-                                    style={{
-                                        background: "red",
-                                        width: "50%",
-                                        backgroundImage: `url(${im})`, width: "100%", height: "30vw", backgroundSize: 'cover'
-                                    }}
-                                ></div>
+                {info.imgs.length == 1 ? <div className="content cellSection" style={{ gridTemplateColumns: "auto" }}>
+                    {info.imgs && info.imgs.map(im => (
+                        <div
+                            className="cells"
+                            style={{
+                                background: "red",
+                                width: "50%",
+                                backgroundImage: `url(${im})`, width: "100%", height: "30vw", backgroundSize: 'cover'
+                            }}
+                        ></div>
 
-                            ))}
-                        </div> :
-                        
-                        (                                                <div className="content cellSection">
+                    ))}
+                </div> :
+
+                    (<div className="content cellSection">
                         {info.imgs && info.imgs.map(im => (
                             <div
                                 className="cells"
@@ -137,10 +137,37 @@ const Projects = ({ data }) => {
 
 
 
-                        {/* <div>
-                            <h2>Role:{info.role}</h2>
-                            <p>{info.text2}</p>
-                            </div> */}
+                        {/* {                                   info.imgs.length==1 ?             <div className="content cellSection" style={{gridTemplateColumns: "auto"}}>
+                            {info.imgs && info.imgs.map(im => (
+                                <div
+                                    className="cells"
+                                    style={{
+                                        background: "red",
+                                        width: "50%",
+                                        backgroundImage: `url(${im})`, width: "100%", height: "30vw", backgroundSize: 'cover'
+                                    }}
+                                ></div>
+
+                            ))}
+                        </div> : info.imgs.length == 0 ? '':
+                        
+                        (                                                <div className="content cellSection">
+                        {info.imgs && info.imgs.map(im => (
+                            <div
+                                className="cells"
+                                style={{
+                                    background: "red",
+                                    width: "50%",
+                                    backgroundImage: `url(${im})`, width: "100%", height: "30vw", backgroundSize: 'cover'
+                                }}
+                            ></div>
+
+                        ))}
+                    </div>)} */}
+
+
+
+
 
                         {/* <div style={{ background: "yellow" }}><h2>{info.text}</h2></div>
                         <div style={{ background: "dodgerblue" }}><h2>{info.text}</h2></div> */}
@@ -155,4 +182,3 @@ const Projects = ({ data }) => {
 }
 
 export default Projects
-    

@@ -32,11 +32,7 @@ socials: {
     github: "https://github.com/ebisLab/CS_Game_of_Life",
     website: "https://cs-game-of-life.now.sh"
 },
-// imgs: [
-//     "/images/fitness/img5.png", 
-//     "/images/fitness/img4.png",
-// "/images/fitness/img3.png"
-// ],
+imgs: [],
 // role: "Lead FrontEnd React Dev",
 techstack: "React, Styled Components, Bootstrap, Immer",
 text: "The Game of Life is a cellular-automaton, zero player game, developed by John Conway in 1970. The game is played on an infinite grid of square cells, and its evolution is only determined by its initial state.",
