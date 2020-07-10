@@ -41,11 +41,12 @@ function App() {
   return (
 
     <Route>
-      {/* <h1 
-      style={{fontFamily: 'Abril Fatface, cursive'}}
-      >Eunice Baiden</h1> */}
-      <nav>
-        <ul>
+      <div>
+      <h1 className="outlined"
+      style={{fontFamily: 'Darker Grotesque, sans-serif', marginBottom: "15px"}}
+      ><Link to="/home">Eunice Baiden</Link></h1>
+      <nav style={{paddingTop: 0}}>
+        <ul className="outlined" style={{ paddingLeft: 0, fontFamily: 'Sulphur Point, sans-serif'}}>
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -55,6 +56,7 @@ function App() {
           <li>Blog</li>
         </ul>
       </nav>
+      </div>
 
       <Route render={({location})=>(
         <TransitionGroup>
@@ -79,18 +81,25 @@ function App() {
                 <Route path="/">
         
                   <div >
-        
-                    <div style={{ display: 'inline-flex', textAlign: 'center', margin: "0 calc(45% - 100px)" }}>
-                      <Search changeHandler={changeHandler} submitHandler={submitHandler} />
-        
+                    <div style={{ display: 'inline-flex', textAlign: 'center', 
+                    // margin: "0 calc(45% - 100px)", 
+                    margin: '20px'
+
+                   }}>
+         
                       <div>
-                        <ul>
+                      <li><i className="fa fa-linkedin-square" style={{fontSize:"20px", color: "gray"}}></i></li>
+                      <li><i className="fa fa-github" style={{fontSize:"24px", color: "gray"}}></i></li>
+                          
+                      <li><i className="fa fa-envelope-o" style={{fontSize:"20px", color: "gray"}}></i></li>
+                        {/* <ul>
                           <li>LinkedIn</li>
                           <li>Github</li>
                           <li>Email</li>
+
         
         
-                        </ul>
+                        </ul> */}
                       </div>
         
                     </div>

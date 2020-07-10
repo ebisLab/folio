@@ -27,8 +27,12 @@ const Home = ({data}) =>{
                 </ul> */}
 
                 <ul id="a113">
-                <li onClick={() => setQuery(null)}>All</li>
-                {b.map((item, key)=><li data-tab={`${item}`} key={key} onClick={filterthrough}>{item}</li>)}
+                <li 
+                // style={{fontFamily: 'Darker Grotesque, sans-serif'}} 
+                onClick={() => setQuery(null)}>All</li>
+                {b.map((item, key)=><li 
+                // style={{fontFamily: 'Darker Grotesque, sans-serif'}} 
+                data-tab={`${item}`} key={key} onClick={filterthrough}>{item}</li>)}
 
                 </ul>
 

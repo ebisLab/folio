@@ -22,14 +22,14 @@ const Projects = ({ data }) => {
     content: "";
     left: 0;
     right: 0;
-    top: -50;
+    top: -145px;
     display: block;
     background-image: url(${info && info.imgUrl});
     background-size: cover;
     transform-origin: center center 0;
     transform:  translateZ(-1px) scale(2);
     z-index: -1;
-    height: 110vh
+    height: 102vh
 }
 `;
 
@@ -77,44 +77,7 @@ my_element.scrollIntoView({
                         </div>
 
 
-
-
-                        {/* <div className="content" style={{ background: "white", display: "inline-grid", padding: 0, gridTemplateColumns: 'repeat(2, 1fr)', }}>
-                            {info.imgs && info.imgs.map(im => (
-                                <div
-                                    style={{
-                                        width: "50%",
-                                        backgroundImage: `url(${im})`, width: "100%", height: "30vw", backgroundSize: 'cover'
-                                    }}
-                                ></div>
-                            ))}
-                        </div>
-
-                        <div className="content" style={{ background: "white" }}>
-                            <div style={{ display: "inline-flex", padding: "0 100px" }}>
-                                <section style={{ padding: "20px", width: "100%" }}><h2>{info.title}</h2></section>
-                                <section style={{ padding: "20px" }}>
-                                    <p>{info.text}</p>
-                                </section>
-                            </div>
-                        </div> */}
-
-                        {/* <div className="content cellSection">
-                            {info.imgs && info.imgs.map(im => (
-                                <div
-                                    className="cells"
-                                    style={{
-                                        background: "red",
-                                        width: "50%",
-                                        backgroundImage: `url(${im})`, width: "100%", height: "30vw", backgroundSize: 'cover'
-                                    }}
-                                ></div>
-
-                            ))}
-                        </div> */}
-
-
-                {info.imgs.length == 1 ? <div className="content cellSection" style={{ gridTemplateColumns: "auto" }}>
+                {info.imgs.length === 1 ? <div className="content cellSection" style={{ gridTemplateColumns: "auto" }}>
                     {info.imgs && info.imgs.map(im => (
                         <div
                             className="cells"
@@ -141,38 +104,6 @@ my_element.scrollIntoView({
 
                         ))}
                     </div>)}
-
-
-
-                        {/* {                                   info.imgs.length==1 ?             <div className="content cellSection" style={{gridTemplateColumns: "auto"}}>
-                            {info.imgs && info.imgs.map(im => (
-                                <div
-                                    className="cells"
-                                    style={{
-                                        background: "red",
-                                        width: "50%",
-                                        backgroundImage: `url(${im})`, width: "100%", height: "30vw", backgroundSize: 'cover'
-                                    }}
-                                ></div>
-
-                            ))}
-                        </div> : info.imgs.length == 0 ? '':
-                        
-                        (                                                <div className="content cellSection">
-                        {info.imgs && info.imgs.map(im => (
-                            <div
-                                className="cells"
-                                style={{
-                                    background: "red",
-                                    width: "50%",
-                                    backgroundImage: `url(${im})`, width: "100%", height: "30vw", backgroundSize: 'cover'
-                                }}
-                            ></div>
-
-                        ))}
-                    </div>)} */}
-
-
 
 
 
