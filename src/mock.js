@@ -4,7 +4,7 @@ export const mock =[
     {
         id:1,
     title: "Anytime Fitness",
-    category: "lambda project",
+    category: "health",
     imgUrl: "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=800",
     socials: {
         github: "https://github.com/anywhere-fitness-ii/Front-End",
@@ -26,7 +26,7 @@ techstack: "React, Node JS/Express, Styled Components",
 {
     id:2,
 title: "Conway Game of Life",
-category: "computer science",
+category: "games",
 imgUrl: "/images/life/img1.png",
 socials: {
     github: "https://github.com/ebisLab/CS_Game_of_Life",
@@ -45,8 +45,8 @@ reference:"http://web.mit.edu/sp.268/www/2010/lifeSlides.pdf"
 {
     id:3,
 title: "Beerthoven",
-category: "lambda project",
-imgUrl: "/images/beerthoven/img1.png",
+category: "non-profit",
+imgUrl: "/images/beerthoven/img5.png",
 socials: {
     github: "https://github.com/Lambda-School-Labs/beerthoven-fe",
     website: "https://www.beerthoven.dev/"
@@ -66,7 +66,7 @@ mock:"https://www.figma.com/file/CEPeeLCgftmibKev07r1k8/Beerthoven%2C-Emily?node
 {
     id:4,
 title: "Replate App",
-category: "lambda project",
+category: "non-profit",
 imgUrl: "/images/replate/img5.jpg",
 socials: {
     github: "https://github.com/lambda-replate/Lambda-Replate-UI",
