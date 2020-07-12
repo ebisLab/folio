@@ -4,6 +4,7 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Home from './components/Home'
 import Post from './components/Post'
+import Blog from './components/Blog'
 import { mock } from './mock'
 import Search from './components/Search'
 import SearchResults from './components/SearchResults'
@@ -53,7 +54,7 @@ function App() {
           <li>
             <Link to="/about">About</Link>
           </li>
-          <li>Blog</li>
+          <li><Link to="/blog">Blog</Link></li>
         </ul>
       </nav>
       </div>
@@ -77,6 +78,9 @@ function App() {
                 </Route>
                 <Route path="/gross">
                   <About />
+                </Route>
+                <Route path="/blog">
+                  <Blog />
                 </Route>
                 <Route path="/">
         
