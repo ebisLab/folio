@@ -6,36 +6,37 @@ import Home from './components/Home'
 import Post from './components/Post'
 import Blog from './components/Blog'
 import { mock } from './mock'
-import Search from './components/Search'
+// import Search from './components/Search'
 import SearchResults from './components/SearchResults'
-import {highlight} from './utils/highlight'
+// import {highlight} from './utils/highlight'
 import {CSSTransition, TransitionGroup } from 'react-transition-group'
 
 import {
   Switch,
   Route,
   Link,
-  NavLink
 } from "react-router-dom";
 
 function App() {
   const [data, setData] = useState([])
-  const [query, setQuery] = useState('')
+  const [query, 
+    // setQuery
+  ] = useState('')
 
 
   useEffect(() => {
     setData(mock)
   }, [])
-  const changeHandler = e => {
-    e.preventDefault();
-    setQuery(e.target.value);
-    highlight(query)
-      };
+  // const changeHandler = e => {
+  //   e.preventDefault();
+  //   setQuery(e.target.value);
+  //   highlight(query)
+  //     };
 
-  const submitHandler = e => {
-    e.preventDefault();
-    setQuery(e.target.value);
-  };
+  // const submitHandler = e => {
+  //   e.preventDefault();
+  //   setQuery(e.target.value);
+  // };
 
 
 

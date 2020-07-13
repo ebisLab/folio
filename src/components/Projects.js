@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { useParams, useRouteMatch} from "react-router-dom";
-import axios from 'axios';
-import {Route, Link} from 'react-router-dom'
-import Post from './Post'
-import {mock} from '../mock'
+import React from 'react';
+// import { useParams, useRouteMatch} from "react-router-dom";
+// import axios from 'axios';
+import {Link} from 'react-router-dom'
+// import Post from './Post'
+// import {mock} from '../mock'
 
 
 

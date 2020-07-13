@@ -82,7 +82,6 @@ my_element.scrollIntoView({
                         <div
                             className="cells"
                             style={{
-                                background: "red",
                                 width: "50%",
                                 backgroundImage: `url(${im})`, width: "100%", height: "30vw", backgroundSize: 'cover'
                             }}
@@ -96,7 +95,6 @@ my_element.scrollIntoView({
                             <div
                                 className="cells"
                                 style={{
-                                    background: "red",
                                     width: "50%",
                                     backgroundImage: `url(${im})`, width: "100%", height: "30vw", backgroundSize: 'cover'
                                 }}

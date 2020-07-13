@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import {blog} from '../mock'
 
-export default function Blog(props) {
+export default function Blog() {
 
     const hello= blog.map(item=>(item.id2)).sort()
     console.log('hello',hello)
