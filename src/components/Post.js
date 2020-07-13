@@ -67,8 +67,8 @@ my_element.scrollIntoView({
 
                                     {/* <p>{info.socials && `Github:  ${info.socials.github}`}</p> */}
                                     {info.socials && (
-                                        <div>
-                                            <a href={`${info.socials.github}`}>Github</a> • <a href={`${info.socials.website}`}>Website</a>
+                                        <div className="post-link">
+                                            <a  href={`${info.socials.github}`}>Github</a> • <a href={`${info.socials.website}`}>Website</a>
                                         </div>
                                     )}
 

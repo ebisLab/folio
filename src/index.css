@@ -29,6 +29,11 @@ a:link {
   color: black
 }
 
+.post-link a:link{
+color:red;
+font-weight: 600;
+}
+
 .searchwrap{
   color: grey; 
   text-overflow: ellipsis; 
