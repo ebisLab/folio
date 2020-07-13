@@ -25,6 +25,10 @@ a:visited {
   color: black;
 }
 
+a:link {
+  color: black
+}
+
 .searchwrap{
   color: grey; 
   text-overflow: ellipsis; 
