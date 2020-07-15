@@ -11,7 +11,7 @@
 .reset li{
     display: block;
     margin: 0px;
-    padding: 0px;
+    padding: 10px;
     cursor: auto;
 }
 
@@ -396,4 +396,13 @@ input::-webkit-input-placeholder {
 .fade-exit.fade-exit-active{
   opacity: 0;
   transition: opacity 150ms linear;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .cellSection {
+    display: unset;
+    padding: 0;
+    grid-template-columns: unset;
+}
 }

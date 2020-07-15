@@ -24,25 +24,6 @@ techstack: "React, Node JS/Express, Styled Components",
 
 },
 {
-    id:2,
-title: "Conway Game of Life",
-category: "games",
-imgUrl: "/images/life/img1.png",
-socials: {
-    github: "https://github.com/ebisLab/CS_Game_of_Life",
-    website: "https://cs-game-of-life.now.sh"
-},
-imgs: [],
-// role: "Lead FrontEnd React Dev",
-techstack: "React, Styled Components, Bootstrap, Immer",
-text: "The Game of Life is a cellular-automaton, zero player game, developed by John Conway in 1970. The game is played on an infinite grid of square cells, and its evolution is only determined by its initial state.",
-// text2: "Designed application UI, implemented key features such as user authentication, user class registration and account permissions",
-// pvd:"https://docs.google.com/document/d/1-lcwK3tHtS_UKMZW9uUtSEFpf2NzNwcQTYW-cJR1rho/edit#",
-// mock:"https://www.figma.com/file/hXpiOocRwRNvjypoijeEr8/AnytimeFit?node-id=0%3A1",
-reference:"http://web.mit.edu/sp.268/www/2010/lifeSlides.pdf"
-
-},
-{
     id:3,
 title: "Beerthoven",
 category: "non-profit",
@@ -61,6 +42,25 @@ text: "A robust yet simple GUI-based data storage, access, research, and plannin
 text2: " Form implementation with ANT design library and validation, using React Testing Library and Jest, full HTTP request to backend with graphQL",
 pvd:"https://www.notion.so/Beerthoven-2ac2dcac96d741fc8c5ff645cf0ccaea",
 mock:"https://www.figma.com/file/CEPeeLCgftmibKev07r1k8/Beerthoven%2C-Emily?node-id=177%3A6"
+
+},
+{
+    id:2,
+title: "Conway Game of Life",
+category: "games",
+imgUrl: "/images/life/img1.png",
+socials: {
+    github: "https://github.com/ebisLab/CS_Game_of_Life",
+    website: "https://cs-game-of-life.now.sh"
+},
+imgs: [],
+// role: "Lead FrontEnd React Dev",
+techstack: "React, Styled Components, Bootstrap, Immer",
+text: "The Game of Life is a cellular-automaton, zero player game, developed by John Conway in 1970. The game is played on an infinite grid of square cells, and its evolution is only determined by its initial state.",
+// text2: "Designed application UI, implemented key features such as user authentication, user class registration and account permissions",
+// pvd:"https://docs.google.com/document/d/1-lcwK3tHtS_UKMZW9uUtSEFpf2NzNwcQTYW-cJR1rho/edit#",
+// mock:"https://www.figma.com/file/hXpiOocRwRNvjypoijeEr8/AnytimeFit?node-id=0%3A1",
+reference:"http://web.mit.edu/sp.268/www/2010/lifeSlides.pdf"
 
 },
 {

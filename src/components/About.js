@@ -44,6 +44,22 @@ const About = () =>{
      <p> If not, then probably spending time with friends and family
         </p>
 
+
+
+        <p>
+            Tech Stacks
+            <ul className="reset" style={{display: "inline-flex"}}>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node JS</li>
+                <li>Python</li>
+                <li>Less</li>
+                <li>Sass</li>
+            </ul>
+        </p>
+
         <p>
             This site is created with 
             <ul className="reset">
