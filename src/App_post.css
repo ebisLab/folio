@@ -43,7 +43,6 @@ html {
   }
 
   .cellSection{
-    background: yellowgreen;
     display: grid;
     padding:0;
     grid-template-columns: repeat(2, 1fr);

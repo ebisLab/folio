@@ -17,7 +17,6 @@ const About = () =>{
                                 <div
                                     className="cells"
                                     style={{
-                                        background: "red",
                                         width: "50%",
                                         backgroundImage: `url(/images/img/img1.jpg)`, width: "100%", height: "50vw", backgroundSize: 'cover'
                                     }}
