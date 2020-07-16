@@ -18,7 +18,7 @@ export const mock =[
 role: "Lead FrontEnd React Dev",
 techstack: "React, Node JS/Express, Styled Components",
     text: "Anytime Fitness is a platform for people who want to have access to a wide variety of fitness classes.  It is quick and easy to sign up and pay.",
-    text2: "Designed application UI, implemented key features such as user authentication, user class registration and account permissions",
+    text2: "Designed application UI, implemented key features such as user authentication, user class registration and account permissions. ",
     pvd:"https://docs.google.com/document/d/1-lcwK3tHtS_UKMZW9uUtSEFpf2NzNwcQTYW-cJR1rho/edit#",
     mock:"https://www.figma.com/file/hXpiOocRwRNvjypoijeEr8/AnytimeFit?node-id=0%3A1"
 
@@ -39,7 +39,7 @@ resources:"https://www.notion.so/Beerthoven-2ac2dcac96d741fc8c5ff645cf0ccaea",
 role: "FrontEnd React Dev",
 techstack: " React, Prismatopia (Bundled witth Apollo Server, Prisma, Postgres, Docker, AWS deployment, and Okta), GraphQL, Ant Design, Chart.js, Faker.js for seeding the database, React Testing Library + Jest:",
 text: "A robust yet simple GUI-based data storage, access, research, and planning tool for nonprofits to be able to access for free or cheap. ",
-text2: " Form implementation with ANT design library and validation, using React Testing Library and Jest, full HTTP request to backend with graphQL",
+text2: " Form implementation with ANT design library and validation, using React Testing Library and Jest, full HTTP request to backend with graphQL.",
 pvd:"https://www.notion.so/Beerthoven-2ac2dcac96d741fc8c5ff645cf0ccaea",
 mock:"https://www.figma.com/file/CEPeeLCgftmibKev07r1k8/Beerthoven%2C-Emily?node-id=177%3A6"
 
@@ -79,7 +79,7 @@ resources:"https://github.com/lambda-replate",
 role: "UI Developer",
 techstack: " HTML, CSS, Javascrip, Animista library",
 text: "Replate is an app designed to help reduce food waste and make it easy to donate surplus food to people that need it.",
-text2: "Designed marketing page to showcase React team's App key features with reponsiveness in mind",
+text2: "Designed marketing page to showcase React team's App key features with reponsiveness in mind. ",
 mock:"https://xd.adobe.com/view/21442870-953b-429c-48a4-4f583201c4e9-5775/"
 
 },

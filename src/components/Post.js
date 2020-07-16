@@ -57,7 +57,7 @@ my_element.scrollIntoView({
                                 <section style={{ padding: "20px", width: "100%" }}>
                                     <h2>{info.title}</h2>
                                     {/* <h4>{info.role}</h4> */}
-                                    <p>Tech stacks: {info.techstack}</p>
+                                    <p>Tech stack: {info.techstack}</p>
 
                                     <p>{info.text2}</p>
                                 </section>
