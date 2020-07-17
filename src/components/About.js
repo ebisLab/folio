@@ -35,19 +35,20 @@ const About = () =>{
                              </h1> */}
 <div style={{margin: 40}}>
 <h2>
-            Hello! My name is Eunice Baiden and I'm a fullstack developer with design in mind. I build beautiful and interactive web applications that cater to clients and users specific needs</h2>
+            Hello! My name is Eunice Baiden and I'm a fullstack developer with design in mind. I build beautiful and interactive web applications that help solve client and customer's problems</h2>
 
 
 
-<p>On days where I’m not creating projects, you’ll find me somewhere around the world eating something I've never seen nor tried before, or staring at precious art at a museum.</p>
-     <p> If not, then probably spending time with friends and family
+<p>On days where I’m not creating projects, you’ll find me somewhere around the world exploring different cultures and trying out new foods, as well as watching fashion shows for creative inspiration. </p>
+     <p> And on my downtime, I love spending time with friends and family
         </p>
 
 
 
-            Skills & Tech Stack
+            
             <p>
-            <ul className="reset" style={{display: "inline-flex"}}>
+            Skills & Tech Stack
+            <ul className="reset" style={{display: "inline-flex", padding: 0}}>
                 <li> <i class="devicon-html5-plain-wordmark colored"></i> HTML</li>
                 <li> <i class="devicon-css3-plain-wordmark colored"></i> CSS</li>
                 <li> <i class="devicon-javascript-plain colored"></i> JavaScript</li>
@@ -58,8 +59,8 @@ const About = () =>{
                 <li> <i class="devicon-less-plain-wordmark colored"></i> Less</li>
                 <li> <i class="devicon-sass-original colored"></i>Sass</li>
             </ul>
-
             </p>
+            
             {/* <p>
             <ul className="reset" style={{display: "inline-flex"}}>
                 <li> <i class="devicon-html5-plain-wordmark colored"></i> Styled Components</li>
@@ -79,13 +80,19 @@ const About = () =>{
 
 
       
-            This site is created with 
+            {/* This site is created with 
             <ul className="reset">
             <li>React. </li>
             <li>CSS Animations</li>
             <li>Animanista CSS Library</li>
+            </ul> */}
+            <ul style={{textAlign: "center", padding: 0}}>
+            <li><i className="fa fa-linkedin-square" style={{fontSize:"20px", color: "gray"}}></i></li>
+                      <li><i className="fa fa-github" style={{fontSize:"24px", color: "gray"}}></i></li>
+                          
+                      <li><i className="fa fa-envelope-o" style={{fontSize:"20px", color: "gray"}}></i></li>
+
             </ul>
-            
 
                                 
                                 
