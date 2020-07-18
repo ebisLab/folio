@@ -12,7 +12,7 @@ export const mock =[
     },
     imgs: [
         "/images/fitness/img5.png", 
-        "/images/fitness/img4.png",
+        "/images/fitness/img7.png",
     "/images/fitness/img3.png"
 ],
 role: "Lead FrontEnd React Dev",
