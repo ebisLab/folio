@@ -59,7 +59,7 @@ my_element.scrollIntoView({
                                     {/* <h4>{info.role}</h4> */}
                                     <p>Tech stack: {info.techstack}</p>
 
-                                    <p>{info.text2}</p>
+<p>{info.text2 ? (<><h3>Key Work: </h3> <p>{info.text2}</p></>) : ""}</p>
                                 </section>
 
                                 <section style={{ padding: "20px", alignSelf: "center" }}><p>{info.text}</p>
@@ -68,7 +68,10 @@ my_element.scrollIntoView({
                                     {/* <p>{info.socials && `Github:  ${info.socials.github}`}</p> */}
                                     {info.socials && (
                                         <div className="post-link">
-                                            <a  href={`${info.socials.github}`}>Github</a> • <a href={`${info.socials.website}`}>Website</a>
+                                            <a  href={`${info.socials.github}`}>Github</a> • <a href={`${info.socials.website}`}>Website</a> {info.mock
+                                            && <> • <a href={`${info.mock}`}> Prototype</a></>
+
+                                            }
                                         </div>
                                     )}
 

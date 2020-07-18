@@ -18,7 +18,7 @@ export const mock =[
 role: "Lead FrontEnd React Dev",
 techstack: "React, Node JS/Express, Styled Components",
     text: "Anytime Fitness is a platform for people who want to have access to a wide variety of fitness classes.  It is quick and easy to sign up and pay.",
-    text2: "Designed application UI, implemented key features such as user authentication, user class registration and account permissions. ",
+    text2: "Wireframing and prototyping, designed user interface, implemented key features such as user authentication, user class registration and account permissions. ",
     pvd:"https://docs.google.com/document/d/1-lcwK3tHtS_UKMZW9uUtSEFpf2NzNwcQTYW-cJR1rho/edit#",
     mock:"https://www.figma.com/file/hXpiOocRwRNvjypoijeEr8/AnytimeFit?node-id=0%3A1"
 
