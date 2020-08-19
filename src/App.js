@@ -93,10 +93,10 @@ function App() {
                    }}>
          
                       <div>
-                      <li><i className="fa fa-linkedin-square" style={{fontSize:"20px", color: "gray"}}></i></li>
-                      <li><i className="fa fa-github" style={{fontSize:"24px", color: "gray"}}></i></li>
+                      <a href="https://www.linkedin.com/in/eunice-baiden/"><li><i className="fa fa-linkedin-square" style={{fontSize:"20px", color: "gray"}}></i></li></a>
+                      <a href="https://github.com/ebisLab" ><li><i className="fa fa-github" style={{fontSize:"24px", color: "gray"}}></i></li></a>
                           
-                      <li><i className="fa fa-envelope-o" style={{fontSize:"20px", color: "gray"}}></i></li>
+                      <a href="mailto:ebaiden@techie.com" style={{margin: "20px",padding: "20px"}}><i className="fa fa-envelope-o" style={{fontSize:"20px", color: "gray"}}></i></a>
                         {/* <ul>
                           <li>LinkedIn</li>
                           <li>Github</li>

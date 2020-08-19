@@ -2,10 +2,7 @@ import React from "react";
 
 const About = () =>{
     return(
-        <div>
-        <h1>
-           About E.B.'s Lab
-        </h1>
+        <div style={{marginTop: "70px"}}>
 
 
 
@@ -35,7 +32,7 @@ const About = () =>{
                              </h1> */}
 <div style={{margin: 40}}>
 <h2>
-            Hello! My name is Eunice Baiden and I'm a fullstack developer with design in mind. I build beautiful and interactive web applications that help solve client and customer's problems</h2>
+            Hello! My name is Eunice Baiden and I'm a fullstack developer with design in mind. I build beautiful and interactive web applications that help solve clients and customers' problems</h2>
 
 
 
@@ -87,10 +84,10 @@ const About = () =>{
             <li>Animanista CSS Library</li>
             </ul> */}
             <ul style={{textAlign: "center", padding: 0}}>
-            <li><i className="fa fa-linkedin-square" style={{fontSize:"20px", color: "gray"}}></i></li>
-                      <li><i className="fa fa-github" style={{fontSize:"24px", color: "gray"}}></i></li>
+            <a href="https://www.linkedin.com/in/eunice-baiden/"><li><i className="fa fa-linkedin-square" style={{fontSize:"20px", color: "gray"}}></i></li></a>
+                      <a href="https://github.com/ebisLab" ><li><i className="fa fa-github" style={{fontSize:"24px", color: "gray"}}></i></li></a>
                           
-                      <li><i className="fa fa-envelope-o" style={{fontSize:"20px", color: "gray"}}></i></li>
+                      <a href="mailto:ebaiden@techie.com" style={{margin: "20px",padding: "20px"}}><i className="fa fa-envelope-o" style={{fontSize:"20px", color: "gray"}}></i></a>
 
             </ul>
 
