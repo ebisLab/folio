@@ -60,13 +60,16 @@ function App() {
       </nav>
       </div>
 
-      <Route render={({location})=>(
-        <TransitionGroup>
-        <CSSTransition
+      {/* <Route render={({location})=>( */}
+        {/* // <TransitionGroup> */}
+        {/* <CSSTransition
         key={location.key}
         timeout={450}
-        classNames="fade">
-              <Switch location={location}>
+        classNames="fade"
+        > */}
+              <Switch 
+              // location={location}
+              >
                 <Route path="/post/:data">
                   <Post data={data} />
                 </Route>
@@ -113,12 +116,12 @@ function App() {
                   </div>
                 </Route>
               </Switch>
-              </CSSTransition>  
+              {/* </CSSTransition>   */}
         
-              </TransitionGroup>
+              {/* </TransitionGroup> */}
         
 
-      )}/>
+      {/* )}/> */}
 {/* <TransitionGroup>
 <CSSTransition
 timeout={300}

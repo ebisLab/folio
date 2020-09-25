@@ -46,7 +46,9 @@ my_element.scrollIntoView({
   behavior: "smooth",
   block: "start",
   inline: "nearest"
-});}} className="floating" style={{ marginTop: 50, fontSize: "6rem", cursor:"pointer", width: "100px", marginLeft: "auto", marginRight: "auto"  }}>↓</h1>
+});}} 
+// className="floating" 
+style={{ marginTop: 50, fontSize: "6rem", cursor:"pointer", width: "100px", marginLeft: "auto", marginRight: "auto"  }}>↓</h1>
                     </Intro>
 
                     <div></div>

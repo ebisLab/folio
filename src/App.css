@@ -267,7 +267,10 @@ nav{
 	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 } */
-.column{-webkit-animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both}
+/* 
+! this part scales each card from middle  
+*/
+/* .column{-webkit-animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both} */
 
 
 /* ----------------------------------------------
@@ -282,7 +285,7 @@ nav{
  * animation slide-fwd-center
  * ----------------------------------------
  */
- @-webkit-keyframes slide-fwd-center {
+ /* @-webkit-keyframes slide-fwd-center {
   0% {
     -webkit-transform: translateZ(0);
             transform: translateZ(0);
@@ -301,7 +304,7 @@ nav{
     -webkit-transform: translateZ(160px);
             transform: translateZ(160px);
   }
-}
+} */
 
 
 input {
