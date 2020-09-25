@@ -27,6 +27,7 @@ html {
   }
   .intro, .intro:before {
       background: 50% 50% / cover;
+      animation: coming 0.2s ease-in-out;
   }
 
   
