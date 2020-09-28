@@ -61,7 +61,7 @@ style={{ marginTop: 50, fontSize: "6rem", cursor:"pointer", width: "100px", marg
                                     {/* <h4>{info.role}</h4> */}
                                     <p>Tech stack: {info.techstack}</p>
 
-<p>{info.text2 ? (<><h3>Key Work: </h3> <p>{info.text2}</p></>) : ""}</p>
+<div>{info.text2 ? (<><h3>Key Work: </h3> <p>{info.text2}</p></>) : ""}</div>
                                 </section>
 
                                 <section style={{ padding: "20px", alignSelf: "center" }}><p>{info.text}</p>
@@ -84,13 +84,14 @@ style={{ marginTop: 50, fontSize: "6rem", cursor:"pointer", width: "100px", marg
 
                 {info.imgs.length === 1 ? <div className="content cellSection" style={{ gridTemplateColumns: "auto" }}>
                     {info.imgs && info.imgs.map(im => (
-                        <div
+                        <div key={im}
                             className="cells"
                             style={{
                                 width: "50%",
                                 backgroundImage: `url(${im})`, width: "100%", height: "30vw", backgroundSize: 'cover'
                             }}
-                        ></div>
+                        >
+                        </div>
 
                     ))}
                 </div> :

@@ -186,4 +186,13 @@ export const blog =[
         content:
           " I'm slowly starting to get the hang of this Redux malarky. Im not an expert by all means, but I'm slowly understanding the moving parts, what goes where and when, and why. Today I learned that while making a delete API call in the actions file to the backend, it's completely isolated from the filter method you would do for the front end in the reducer. Crazy, uh?!"
       
+},
+{
+    id: Date.now(),
+    date2: "9/25/2020, 7:19:32 PM",
+    id2: 1601071311234,
+    title: "I slayed the dragon and presented its head to the head master",
+    content:
+      "Basically, I've officially completed Lambda School, and fully endorsed as of 3:01 pm Easter Time today. Best feeling in the world to have finally completed something that I no one in the world can take away from me. This whole experience has been revolutionary in my life. I have lost my mind everyday since I started, cried, sweat, I lost friends and loved ones along the way, but I've gained clarity and assurance in my life for the first time in .. I cant't even say. Let the job hunt officially begin. "
+  
 }]

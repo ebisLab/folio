@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './App.css';
 import About from './components/About'
-import Projects from './components/Projects'
+// import Projects from './components/Projects'
 import Home from './components/Home'
 import Post from './components/Post'
 import Blog from './components/Blog'
@@ -74,9 +74,9 @@ function App() {
                   <Post data={data} />
                 </Route>
         
-                <Route path="/post/">
+                {/* <Route path="/post/">
                   <Projects data={data} />
-                </Route>
+                </Route> */}
                 <Route path="/about">
                   <About />
                 </Route>

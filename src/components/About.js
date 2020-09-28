@@ -46,15 +46,15 @@ const About = () =>{
             <p>
             Skills & Tech Stack
             <ul className="reset" style={{display: "inline-flex", padding: 0}}>
-                <li> <i class="devicon-html5-plain-wordmark colored"></i> HTML</li>
-                <li> <i class="devicon-css3-plain-wordmark colored"></i> CSS</li>
-                <li> <i class="devicon-javascript-plain colored"></i> JavaScript</li>
-                <li> <i class="devicon-react-original colored"></i> React</li>
-                <li> <i class="devicon-nodejs-plain colored"></i> Node JS</li>
-                <li> <i class="devicon-express-original-wordmark"></i> Express </li>
-                <li> <i class="devicon-python-plain"></i> Python</li>
-                <li> <i class="devicon-less-plain-wordmark colored"></i> Less</li>
-                <li> <i class="devicon-sass-original colored"></i>Sass</li>
+                <li> <i className="devicon-html5-plain-wordmark colored"></i> HTML</li>
+                <li> <i className="devicon-css3-plain-wordmark colored"></i> CSS</li>
+                <li> <i className="devicon-javascript-plain colored"></i> JavaScript</li>
+                <li> <i className="devicon-react-original colored"></i> React</li>
+                <li> <i className="devicon-nodejs-plain colored"></i> Node JS</li>
+                <li> <i className="devicon-express-original-wordmark"></i> Express </li>
+                <li> <i className="devicon-python-plain"></i> Python</li>
+                <li> <i className="devicon-less-plain-wordmark colored"></i> Less</li>
+                <li> <i className="devicon-sass-original colored"></i>Sass</li>
             </ul>
             </p>
             
