@@ -65,6 +65,11 @@ background: red;
       }
 
 
+  video:focus{
+    outline:none
+  }
+
+
 
 
 
