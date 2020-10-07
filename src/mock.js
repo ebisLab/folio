@@ -15,8 +15,8 @@ export const mock =[
         "/images/fitness/img7.png",
     "/images/fitness/img3.png"
 ],
-role: "Lead FrontEnd React Dev",
-techstack: "React, Node JS/Express, Styled Components",
+role: "Sr. Front End Engineer",
+techstack: "React, Node JS/Express, Styled Components, Context-Api",
     text: "Anytime Fitness is a platform for people who want to have access to a wide variety of fitness classes.  It is quick and easy to sign up and pay.",
     text2: "Wireframing and prototyping, designed user interface, implemented key features such as user authentication, user class registration and account permissions. ",
     pvd:"https://docs.google.com/document/d/1-lcwK3tHtS_UKMZW9uUtSEFpf2NzNwcQTYW-cJR1rho/edit#",
@@ -44,25 +44,25 @@ pvd:"https://www.notion.so/Beerthoven-2ac2dcac96d741fc8c5ff645cf0ccaea",
 mock:"https://www.figma.com/file/CEPeeLCgftmibKev07r1k8/Beerthoven%2C-Emily?node-id=177%3A6"
 
 },
-{
-    id:2,
-title: "Conway Game of Life",
-category: "games",
-imgUrl: "/images/life/img1.png",
-socials: {
-    github: "https://github.com/ebisLab/CS_Game_of_Life",
-    website: "https://cs-game-of-life.now.sh"
-},
-imgs: [],
-// role: "Lead FrontEnd React Dev",
-techstack: "React, Styled Components, Bootstrap, Immer",
-text: "The Game of Life is a cellular-automaton, zero player game, developed by John Conway in 1970. The game is played on an infinite grid of square cells, and its evolution is only determined by its initial state.",
-// text2: "Designed application UI, implemented key features such as user authentication, user class registration and account permissions",
-// pvd:"https://docs.google.com/document/d/1-lcwK3tHtS_UKMZW9uUtSEFpf2NzNwcQTYW-cJR1rho/edit#",
-// mock:"https://www.figma.com/file/hXpiOocRwRNvjypoijeEr8/AnytimeFit?node-id=0%3A1",
-reference:"http://web.mit.edu/sp.268/www/2010/lifeSlides.pdf"
+// {
+//     id:2,
+// title: "Conway Game of Life",
+// category: "games",
+// imgUrl: "/images/life/img1.png",
+// socials: {
+//     github: "https://github.com/ebisLab/CS_Game_of_Life",
+//     website: "https://cs-game-of-life.now.sh"
+// },
+// imgs: [],
+// // role: "Lead FrontEnd React Dev",
+// techstack: "React, Styled Components, Bootstrap, Immer",
+// text: "The Game of Life is a cellular-automaton, zero player game, developed by John Conway in 1970. The game is played on an infinite grid of square cells, and its evolution is only determined by its initial state.",
+// // text2: "Designed application UI, implemented key features such as user authentication, user class registration and account permissions",
+// // pvd:"https://docs.google.com/document/d/1-lcwK3tHtS_UKMZW9uUtSEFpf2NzNwcQTYW-cJR1rho/edit#",
+// // mock:"https://www.figma.com/file/hXpiOocRwRNvjypoijeEr8/AnytimeFit?node-id=0%3A1",
+// reference:"http://web.mit.edu/sp.268/www/2010/lifeSlides.pdf"
 
-},
+// },
 {
     id:4,
 title: "Replate App",
@@ -81,6 +81,26 @@ techstack: " HTML, CSS, Javascrip, Animista library",
 text: "Replate is an app designed to help reduce food waste and make it easy to donate surplus food to people that need it.",
 text2: "Designed marketing page to showcase React team's App key features with reponsiveness in mind. ",
 mock:"https://xd.adobe.com/view/21442870-953b-429c-48a4-4f583201c4e9-5775/"
+
+},
+{
+    id:5,
+title: "Hair Care App",
+category: "makeover",
+imgUrl: "/images/hair/img6.jpeg",
+socials: {
+    github: "https://github.com/bw-haircare/FE1-Ebi",
+    website: "https://haircare-now.netlify.app"
+},
+imgs: [
+    "/images/hair/Hair_Movie3.mp4", "/images/hair/img11.png", "/images/hair/img10.png", "/images/hair/hair_img_poster.png"
+],
+resources:"https://github.com/bw-haircare/FE1-Ebi",
+role: "Full Stack",
+techstack: "HTML/CSS, JavaScript, React, Redux, RESTful Api, NodeJs, Express",
+text: "Hair Care is the online destination for beauty & wellness professionals and clients. Professionals can showcase their work, connect with new and existing clients, and build their business. Clients can discover new services and providers, book appointments online, and get inspired.",
+text2: "Refactored buggy Redux framework, redesigned dashboard to be more intuitive, replaced backend with NodeJs and Express to track real data",
+mock:""
 
 },
 
@@ -186,4 +206,13 @@ export const blog =[
         content:
           " I'm slowly starting to get the hang of this Redux malarky. Im not an expert by all means, but I'm slowly understanding the moving parts, what goes where and when, and why. Today I learned that while making a delete API call in the actions file to the backend, it's completely isolated from the filter method you would do for the front end in the reducer. Crazy, uh?!"
       
+},
+{
+    id: Date.now(),
+    date2: "9/25/2020, 7:19:32 PM",
+    id2: 1601071311234,
+    title: "I slayed the dragon and presented its head to the head master",
+    content:
+      "Basically, I've officially completed Lambda School, and fully endorsed as of 3:01 pm Easter Time today. Best feeling in the world to have finally completed something that I no one in the world can take away from me. This whole experience has been revolutionary in my life. I have lost my mind everyday since I started, cried, sweat, I lost friends and loved ones along the way, but I've gained clarity and assurance in my life for the first time in .. I cant't even say. Let the job hunt officially begin. "
+  
 }]

@@ -12,6 +12,27 @@ const Projects = ({ data }) => {
     console.log(params, 'params')
     console.log(info, 'info')
 
+    function isFileImage(file) {
+        console.log("FILE-->", file)
+        const acceptedImageTypes = ['jpg','gif', 'jpeg', 'png'];
+     
+        return file && acceptedImageTypes.includes(file['type'])
+    }
+    // function isFileImage(file) {
+    //     return file && file['type'].split('/')[0] === 'image';
+    // }
+
+    function checkURL(url) {
+        return(url.match(/\.(jpeg|jpg|gif|png)$/) != null);
+    }
+    const arr=["https://i.imgur.com/Dpm9khf.jpg", "https://i.imgur.com/Dpm9khf.png", "https://i.imgur.com/Dpm9khf.gif","https://i.imgur.com/Dpm9khf.mp4" ]
+    console.log("IS THIS AN IMG", arr.map(item=>checkURL(item)))
+
+    console.log("IS THIS AN IMAGE?", isFileImage("jpg"))
+    const stillImg=0
+    // const stillImg= info.imgs && info.imgs.map(im=>im[3])
+    
+
     const Intro = styled.div`
   font-size: 1.5em;
   text-align: center;
@@ -35,9 +56,12 @@ const Projects = ({ data }) => {
 
     return (
         <>
+        {console.log("INFO IMG", info )}
             {info && (
+                
 
                 <div>
+                    {/* {const imgPoster = info.imgs[3])} */}
                     <Intro className="intro">
                         <h1 onClick={()=>{
                             var my_element = document.getElementById("my_element");
@@ -46,7 +70,9 @@ my_element.scrollIntoView({
   behavior: "smooth",
   block: "start",
   inline: "nearest"
-});}} className="floating" style={{ marginTop: 50, fontSize: "6rem", cursor:"pointer", width: "100px", marginLeft: "auto", marginRight: "auto"  }}>↓</h1>
+});}} 
+// className="floating" 
+style={{ marginTop: 50, fontSize: "6rem", cursor:"pointer", width: "100px", marginLeft: "auto", marginRight: "auto"  }}>↓</h1>
                     </Intro>
 
                     <div></div>
@@ -59,7 +85,7 @@ my_element.scrollIntoView({
                                     {/* <h4>{info.role}</h4> */}
                                     <p>Tech stack: {info.techstack}</p>
 
-<p>{info.text2 ? (<><h3>Key Work: </h3> <p>{info.text2}</p></>) : ""}</p>
+<div>{info.text2 ? (<><h3>Key Work: </h3> <p>{info.text2}</p></>) : ""}</div>
                                 </section>
 
                                 <section style={{ padding: "20px", alignSelf: "center" }}><p>{info.text}</p>
@@ -82,29 +108,60 @@ my_element.scrollIntoView({
 
                 {info.imgs.length === 1 ? <div className="content cellSection" style={{ gridTemplateColumns: "auto" }}>
                     {info.imgs && info.imgs.map(im => (
-                        <div
+                        <div key={im}
                             className="cells"
                             style={{
                                 width: "50%",
                                 backgroundImage: `url(${im})`, width: "100%", height: "30vw", backgroundSize: 'cover'
                             }}
-                        ></div>
+                        >
+                        </div>
 
                     ))}
                 </div> :
 
-                    (<div className="content cellSection">
+                    (
+                    
+                                            <div className="content cellSection">
                         {info.imgs && info.imgs.map(im => (
+                            // console.log("THIS IMAGE IS VALID", checkURL(im))
+                            checkURL(im)==false? (
+                                <video poster={info.imgs[3]} controls style={{width: "100%", height:"auto", backgroundColor:"black"}}> 
+  <source src={`${im}`} type="video/mp4"/> 
+  {console.log("IMMMG", im)}
+</video>
+
+                                // <iframe src={im} width="1200px" height="600vh" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                            //    <video style={{width:"50%"}} src={im} controls></video>
+                            // im
+                            ): (
                             <div
                                 className="cells"
                                 style={{
                                     width: "50%",
-                                    backgroundImage: `url(${im})`, width: "100%", height: "30vw", backgroundSize: 'cover'
+                                    backgroundImage: `url(${im})`, backgroundColor:"black", width: "100%", height: "30vw", backgroundSize: 'cover'
                                 }}
                             ></div>
+                            )
 
                         ))}
-                    </div>)}
+                    </div>
+
+                    // <div className="content cellSection">
+                    //     {info.imgs && info.imgs.map(im => (
+                    //         <div
+                    //             className="cells"
+                    //             style={{
+                    //                 width: "50%",
+                    //                 backgroundImage: `url(${im})`, backgroundColor:"black", width: "100%", height: "30vw", backgroundSize: 'cover'
+                    //             }}
+                    //         ></div>
+
+                    //     ))}
+                    // </div>
+                    
+                    
+                    )}
 
 
 

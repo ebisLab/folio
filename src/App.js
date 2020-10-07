@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './App.css';
 import About from './components/About'
-import Projects from './components/Projects'
+// import Projects from './components/Projects'
 import Home from './components/Home'
 import Post from './components/Post'
 import Blog from './components/Blog'
@@ -60,20 +60,23 @@ function App() {
       </nav>
       </div>
 
-      <Route render={({location})=>(
-        <TransitionGroup>
-        <CSSTransition
+      {/* <Route render={({location})=>( */}
+        {/* // <TransitionGroup> */}
+        {/* <CSSTransition
         key={location.key}
         timeout={450}
-        classNames="fade">
-              <Switch location={location}>
+        classNames="fade"
+        > */}
+              <Switch 
+              // location={location}
+              >
                 <Route path="/post/:data">
                   <Post data={data} />
                 </Route>
         
-                <Route path="/post/">
+                {/* <Route path="/post/">
                   <Projects data={data} />
-                </Route>
+                </Route> */}
                 <Route path="/about">
                   <About />
                 </Route>
@@ -113,12 +116,12 @@ function App() {
                   </div>
                 </Route>
               </Switch>
-              </CSSTransition>  
+              {/* </CSSTransition>   */}
         
-              </TransitionGroup>
+              {/* </TransitionGroup> */}
         
 
-      )}/>
+      {/* )}/> */}
 {/* <TransitionGroup>
 <CSSTransition
 timeout={300}
