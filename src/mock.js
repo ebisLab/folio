@@ -3,6 +3,26 @@
 export const mock =[
     {
         id:1,
+    title: "Hair Care App",
+    category: "makeover",
+    imgUrl: "/images/hair/img6.jpeg",
+    socials: {
+        github: "https://github.com/bw-haircare/FE1-Ebi",
+        website: "https://haircare-now.netlify.app"
+    },
+    imgs: [
+        "/images/hair/Hair_Movie3.mp4", "/images/hair/img11.png", "/images/hair/img10.png", "/images/hair/hair_img_poster.png"
+    ],
+    resources:"https://github.com/bw-haircare/FE1-Ebi",
+    role: "Full Stack",
+    techstack: "HTML/CSS, JavaScript, React, Redux, RESTful Api, NodeJs, Express",
+    text: "Hair Care is the online destination for beauty & wellness professionals and clients. Professionals can showcase their work, connect with new and existing clients, and build their business. Clients can discover new services and providers, book appointments online, and get inspired.",
+    text2: "Refactored buggy Redux framework, redesigned dashboard to be more intuitive, replaced backend with NodeJs and Express to track real data",
+    mock:""
+    
+    },
+    {
+        id:2,
     title: "Anytime Fitness",
     category: "health",
     imgUrl: "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=800",
@@ -83,27 +103,6 @@ text2: "Designed marketing page to showcase React team's App key features with r
 mock:"https://xd.adobe.com/view/21442870-953b-429c-48a4-4f583201c4e9-5775/"
 
 },
-{
-    id:5,
-title: "Hair Care App",
-category: "makeover",
-imgUrl: "/images/hair/img6.jpeg",
-socials: {
-    github: "https://github.com/bw-haircare/FE1-Ebi",
-    website: "https://haircare-now.netlify.app"
-},
-imgs: [
-    "/images/hair/Hair_Movie3.mp4", "/images/hair/img11.png", "/images/hair/img10.png", "/images/hair/hair_img_poster.png"
-],
-resources:"https://github.com/bw-haircare/FE1-Ebi",
-role: "Full Stack",
-techstack: "HTML/CSS, JavaScript, React, Redux, RESTful Api, NodeJs, Express",
-text: "Hair Care is the online destination for beauty & wellness professionals and clients. Professionals can showcase their work, connect with new and existing clients, and build their business. Clients can discover new services and providers, book appointments online, and get inspired.",
-text2: "Refactored buggy Redux framework, redesigned dashboard to be more intuitive, replaced backend with NodeJs and Express to track real data",
-mock:""
-
-},
-
 // {
 //     id:2,
 //     title: "Project Sample 1",
