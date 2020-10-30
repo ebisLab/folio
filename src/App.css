@@ -61,6 +61,18 @@ li{
   cursor: pointer;
 }
 
+.mainlinks li{
+  margin: 0px;
+}
+
+.mainlinks a li{
+  padding-right: 0;
+}
+
+/* li .fa{
+  background: purple
+} */
+
 
 .row{
   max-width: var(--wrapper);

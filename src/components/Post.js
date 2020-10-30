@@ -43,7 +43,7 @@ const Projects = ({ data }) => {
     content: "";
     left: 0;
     right: 0;
-    top: -145px;
+    top: -185px;
     display: block;
     background-image: url(${info && info.imgUrl});
     background-size: cover;

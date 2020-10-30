@@ -45,10 +45,12 @@ function App() {
     <Route>
       <div>
       <h1 className="outlined"
-      style={{fontFamily: 'Darker Grotesque, sans-serif', marginBottom: "15px"}}
-      ><Link to="/home">Eunice Baiden</Link></h1>
+            style={{fontFamily: 'Playfair Dispair, serif', color:"#616161", fontSize:"3.4em", marginBottom: "15px"}}
+
+      // style={{fontFamily: 'Playfair Dispair,Darker Grotesque, sans-serif', marginBottom: "15px"}}
+      ><Link to="/home" style={{color:"#616161"}}>Eunice Baiden</Link></h1>
       <nav style={{paddingTop: 0}}>
-        <ul className="outlined" style={{ paddingLeft: 0, fontFamily: 'Sulphur Point, sans-serif'}}>
+        <ul className="outlined mainlinks" style={{ paddingLeft: 0, fontFamily: 'Sulphur Point, sans-serif'}}>
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -56,7 +58,21 @@ function App() {
             <Link to="/about">About</Link>
           </li>
           <li><Link to="/blog">Blog</Link></li>
-        </ul>
+        {/* <div style={{ display: 'inline-flex', textAlign: 'center', 
+                    // margin: "0 calc(45% - 100px)", 
+                    margin: '20px'
+
+                   }}> */}
+         
+                      {/* <div> */}
+                      <a href="https://www.linkedin.com/in/eunice-baiden/"><li><i className="fa fa-linkedin-square" style={{fontSize:"20px", color: "gray"}}></i></li></a>
+                      <a href="https://github.com/ebisLab" ><li><i className="fa fa-github" style={{fontSize:"24px", color: "gray"}}></i></li></a>
+                          
+                      <a href="mailto:ebaiden@techie.com" style={{padding: "20px"}}><i className="fa fa-envelope-o" style={{fontSize:"20px", color: "gray"}}></i></a>
+            </ul>            
+                      {/* </div> */}
+        
+                    {/* </div> */}
       </nav>
       </div>
 
@@ -89,28 +105,7 @@ function App() {
                 <Route path="/">
         
                   <div >
-                    <div style={{ display: 'inline-flex', textAlign: 'center', 
-                    // margin: "0 calc(45% - 100px)", 
-                    margin: '20px'
-
-                   }}>
-         
-                      <div>
-                      <a href="https://www.linkedin.com/in/eunice-baiden/"><li><i className="fa fa-linkedin-square" style={{fontSize:"20px", color: "gray"}}></i></li></a>
-                      <a href="https://github.com/ebisLab" ><li><i className="fa fa-github" style={{fontSize:"24px", color: "gray"}}></i></li></a>
-                          
-                      <a href="mailto:ebaiden@techie.com" style={{margin: "20px",padding: "20px"}}><i className="fa fa-envelope-o" style={{fontSize:"20px", color: "gray"}}></i></a>
-                        {/* <ul>
-                          <li>LinkedIn</li>
-                          <li>Github</li>
-                          <li>Email</li>
-
-        
-        
-                        </ul> */}
-                      </div>
-        
-                    </div>
+                    {/* ////// */}
         
                     {query ? <SearchResults query={query} data={data}/> : <Home data={data} />}
                   </div>

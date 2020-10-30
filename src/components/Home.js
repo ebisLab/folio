@@ -17,7 +17,7 @@ const Home = ({data}) =>{
 
     return(
         <div>
-            <nav id="navigation">
+            <nav id="navigation" style={{fontFamily: 'Reenie Beanie', fontSize:"1.5em"}}>
                 {/* <ul>
                 <li onClick={() => setQuery(null)}>All</li>
                     <li data-tab="illustrations" className="something" onClick={filterthrough}>Illustrations</li>
