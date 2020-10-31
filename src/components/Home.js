@@ -29,7 +29,7 @@ const Home = ({data}) =>{
                 <ul id="a113">
                 <li 
                 // style={{fontFamily: 'Darker Grotesque, sans-serif'}} 
-                onClick={() => setQuery(null)}>All</li>
+                onClick={() => setQuery(null)}>ALL</li>
                 {b.map((item, key)=><li 
                 // style={{fontFamily: 'Darker Grotesque, sans-serif'}} 
                 data-tab={`${item}`} key={key} onClick={filterthrough}>{item}</li>)}

@@ -46,8 +46,6 @@ function App() {
       <div>
       <h1 className="outlined"
             style={{fontFamily: 'Playfair Dispair, serif', color:"#616161", fontSize:"3.4em", marginBottom: "15px"}}
-
-      // style={{fontFamily: 'Playfair Dispair,Darker Grotesque, sans-serif', marginBottom: "15px"}}
       ><Link to="/home" style={{color:"#616161"}}>Eunice Baiden</Link></h1>
       <nav style={{paddingTop: 0}}>
         <ul className="outlined mainlinks" style={{ paddingLeft: 0, fontFamily: 'Sulphur Point, sans-serif'}}>
