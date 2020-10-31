@@ -25,7 +25,7 @@ export const mock =[
         id:2,
     title: "Anytime Fitness",
     category: "health",
-    imgUrl: "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=800",
+    imgUrl: "/images/fitness/img0.jpeg",
     socials: {
         github: "https://github.com/anywhere-fitness-ii/Front-End",
         website: "https://anytimefit.netlify.app"
