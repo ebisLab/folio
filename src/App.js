@@ -56,21 +56,14 @@ function App() {
             <Link to="/about">About</Link>
           </li>
           <li><Link to="/blog">Blog</Link></li>
-        {/* <div style={{ display: 'inline-flex', textAlign: 'center', 
-                    // margin: "0 calc(45% - 100px)", 
-                    margin: '20px'
+          <li><a href={`http://ebislab.com`}>E.B's Lab</a></li>
 
-                   }}> */}
-         
-                      {/* <div> */}
                       <a href="https://www.linkedin.com/in/eunice-baiden/"><li><i className="fa fa-linkedin-square" style={{fontSize:"20px", color: "gray"}}></i></li></a>
                       <a href="https://github.com/ebisLab" ><li><i className="fa fa-github" style={{fontSize:"24px", color: "gray"}}></i></li></a>
                           
                       <a href="mailto:ebaiden@techie.com" style={{padding: "20px"}}><i className="fa fa-envelope-o" style={{fontSize:"20px", color: "gray"}}></i></a>
             </ul>            
-                      {/* </div> */}
-        
-                    {/* </div> */}
+
       </nav>
       </div>
 
