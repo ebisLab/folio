@@ -47,7 +47,7 @@ techstack: "React, Node JS/Express, Styled Components, Context-Api",
     id:3,
 title: "Beerthoven",
 category: "non-profit",
-imgUrl: "/images/beerthoven/img5.png",
+imgUrl: "/images/beerthoven/img5.jpg",
 socials: {
     github: "https://github.com/Lambda-School-Labs/beerthoven-fe",
     website: "https://www.beerthoven.dev/"
