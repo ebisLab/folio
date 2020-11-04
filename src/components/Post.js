@@ -18,9 +18,7 @@ const Projects = ({ data }) => {
      
         return file && acceptedImageTypes.includes(file['type'])
     }
-    // function isFileImage(file) {
-    //     return file && file['type'].split('/')[0] === 'image';
-    // }
+
 
     function checkURL(url) {
         return(url.match(/\.(jpeg|jpg|gif|png)$/) != null);
@@ -29,8 +27,6 @@ const Projects = ({ data }) => {
     console.log("IS THIS AN IMG", arr.map(item=>checkURL(item)))
 
     console.log("IS THIS AN IMAGE?", isFileImage("jpg"))
-    const stillImg=0
-    // const stillImg= info.imgs && info.imgs.map(im=>im[3])
     
 
     const Intro = styled.div`
@@ -126,7 +122,14 @@ style={{ marginTop: 50, fontSize: "6rem", cursor:"pointer", width: "100px", marg
                         {info.imgs && info.imgs.map(im => (
                             // console.log("THIS IMAGE IS VALID", checkURL(im))
                             checkURL(im)==false? (
-                                <video poster={info.imgs[3]} controls style={{width: "100%", height:"auto", backgroundColor:"black"}}> 
+                                <video 
+                                frameborder="0"
+       autoplay="autoplay"
+       width="600px"
+       muted
+       loop
+                                // poster={info.imgs[3]}
+                                  style={{width: "100%", height:"auto", backgroundColor:"black"}}> 
   <source src={`${im}`} type="video/mp4"/> 
   {console.log("IMMMG", im)}
 </video>
