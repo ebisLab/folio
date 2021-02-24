@@ -56,7 +56,7 @@ function App() {
             <Link to="/about">About</Link>
           </li>
           <li><Link to="/blog">Blog</Link></li>
-          <li><a href={`http://ebislab.com`}>E.B's Lab</a></li>
+          <li><a href={`https://ebislab.com/#/home`}>E.B's Lab</a></li>
 
                       <a href="https://www.linkedin.com/in/eunice-baiden/"><li><i className="fa fa-linkedin-square" style={{fontSize:"20px", color: "gray"}}></i></li></a>
                       <a href="https://github.com/ebisLab" ><li><i className="fa fa-github" style={{fontSize:"24px", color: "gray"}}></i></li></a>

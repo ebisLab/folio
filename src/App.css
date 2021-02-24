@@ -74,6 +74,10 @@ li{
 } */
 
 
+.cells.fullcells:first-child {
+  height: 100% !important;
+}
+
 .row{
   max-width: var(--wrapper);
   display: grid;
