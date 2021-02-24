@@ -50,6 +50,89 @@ const Projects = ({ data }) => {
 }
 `;
 
+
+const getConditional=()=>{
+    if(info && info.layout === 2){
+       return ( <div className="content cellSection" style={{ gridTemplateColumns: "auto" }}>
+                    {info.imgs && info.imgs.map(im => (
+                        <div key={im}
+                            className="cells"
+                            style={{
+                                width: "50%",
+                                backgroundImage: `url(${im})`, width: "100%", height: "30vw", backgroundSize: 'cover'
+                            }}
+                        />
+
+                    ))}
+                </div> )
+    }
+    if(info && info.layout ===1){
+        return(  
+            <div className="content cellSection">
+                {info.imgs.map(item=>{
+                    return (checkURL(item)==false ? (
+                        <video 
+                            frameborder="0"
+                            autoplay="autoplay"
+                            width="600px"
+                            muted
+                            loop
+                            style={{width: "100%", height:"auto", backgroundColor:"black"}}> 
+                            <source src={`${item}`} type="video/mp4"/> 
+                        </video>
+                    ):(
+                        <div
+                                className="cells"
+                                style={{
+                                    width: "50%",
+                                    backgroundImage: `url(${item})`, backgroundColor:"black", width: "100%", height: "30vw", backgroundSize: 'cover'
+                                }}
+                            ></div>
+                    ))
+
+                })}
+                
+
+            </div>
+        )}
+    if(info && info.layout === 3){
+        return(  
+            <div className="content cellSection">
+                {info.imgs.map(item=>{
+                    return (checkURL(item)==false ? (
+                        <video 
+                            frameborder="0"
+                            autoplay="autoplay"
+                            width="600px"
+                            muted
+                            loop
+                            style={{width: "100%", height:"auto", backgroundColor:"black"}}> 
+                            <source src={`${item}`} type="video/mp4"/> 
+                        </video>
+                    ):(
+                        <div
+                                className="cells fullcells"
+                                style={{
+                                    width: "50%",
+                                    backgroundImage: `url(${item})`, backgroundColor:"black", width: "100%",  height: "30vw", backgroundSize: 'cover'
+                                }}
+                            ></div>
+                    ))
+
+                })}
+                
+
+            </div>
+        )
+
+        
+    }
+
+    
+
+
+}
+
     return (
         <>
         {console.log("INFO IMG", info )}
@@ -57,7 +140,6 @@ const Projects = ({ data }) => {
                 
 
                 <div>
-                    {/* {const imgPoster = info.imgs[3])} */}
                     <Intro className="intro">
                         <h1 onClick={()=>{
                             var my_element = document.getElementById("my_element");
@@ -67,7 +149,6 @@ my_element.scrollIntoView({
   block: "start",
   inline: "nearest"
 });}} 
-// className="floating" 
 style={{ marginTop: 50, fontSize: "6rem", cursor:"pointer", width: "100px", marginLeft: "auto", marginRight: "auto"  }}>↓</h1>
                     </Intro>
 
@@ -101,8 +182,12 @@ style={{ marginTop: 50, fontSize: "6rem", cursor:"pointer", width: "100px", marg
                             </div>
                         </div>
 
+                        {getConditional()}
 
-                {info.imgs.length === 1 ? <div className="content cellSection" style={{ gridTemplateColumns: "auto" }}>
+
+                {/* {info.imgs.length === 1 ? 
+                
+                <div className="content cellSection" style={{ gridTemplateColumns: "auto" }}>
                     {info.imgs && info.imgs.map(im => (
                         <div key={im}
                             className="cells"
@@ -110,33 +195,25 @@ style={{ marginTop: 50, fontSize: "6rem", cursor:"pointer", width: "100px", marg
                                 width: "50%",
                                 backgroundImage: `url(${im})`, width: "100%", height: "30vw", backgroundSize: 'cover'
                             }}
-                        >
-                        </div>
+                        />
 
                     ))}
                 </div> :
 
                     (
-                    
-                                            <div className="content cellSection">
+                    <div className="content cellSection">
                         {info.imgs && info.imgs.map(im => (
-                            // console.log("THIS IMAGE IS VALID", checkURL(im))
                             checkURL(im)==false? (
-                                <video 
-                                frameborder="0"
-       autoplay="autoplay"
-       width="600px"
-       muted
-       loop
-                                // poster={info.imgs[3]}
-                                  style={{width: "100%", height:"auto", backgroundColor:"black"}}> 
-  <source src={`${im}`} type="video/mp4"/> 
-  {console.log("IMMMG", im)}
-</video>
-
-                                // <iframe src={im} width="1200px" height="600vh" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                            //    <video style={{width:"50%"}} src={im} controls></video>
-                            // im
+                        <video 
+                            frameborder="0"
+                            autoplay="autoplay"
+                            width="600px"
+                            muted
+                            loop
+                            style={{width: "100%", height:"auto", backgroundColor:"black"}}> 
+                            <source src={`${im}`} type="video/mp4"/> 
+                            {console.log("IMMMG", im)}
+                        </video>
                             ): (
                             <div
                                 className="cells"
@@ -149,27 +226,8 @@ style={{ marginTop: 50, fontSize: "6rem", cursor:"pointer", width: "100px", marg
 
                         ))}
                     </div>
+                     )} */}
 
-                    // <div className="content cellSection">
-                    //     {info.imgs && info.imgs.map(im => (
-                    //         <div
-                    //             className="cells"
-                    //             style={{
-                    //                 width: "50%",
-                    //                 backgroundImage: `url(${im})`, backgroundColor:"black", width: "100%", height: "30vw", backgroundSize: 'cover'
-                    //             }}
-                    //         ></div>
-
-                    //     ))}
-                    // </div>
-                    
-                    
-                    )}
-
-
-
-                        {/* <div style={{ background: "yellow" }}><h2>{info.text}</h2></div>
-                        <div style={{ background: "dodgerblue" }}><h2>{info.text}</h2></div> */}
                     </div>
 
                 </div>
